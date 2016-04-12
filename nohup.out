@@ -178,3 +178,25 @@ ss="b">13</td><td class="c">1026.5</td><td class="b">18.0</td><td class="b">42</
 127.0.0.1 - - [12/Apr/2016 12:36:29] "GET /south_australia HTTP/1.1" 404 -
 127.0.0.1 - - [12/Apr/2016 12:36:33] "GET /south_australia HTTP/1.1" 404 -
 127.0.0.1 - - [12/Apr/2016 12:36:41] "GET /act HTTP/1.1" 404 -
+ * Detected change in '/var/www/sept-weather/app.py', reloading
+ * Restarting with stat
+  File "app.py", line 40
+    -
+    ^
+SyntaxError: invalid syntax
+ * Detected change in '/var/www/sept-weather/app.py', reloading
+class="b">84</td><td class="b"> </td><td class="a">NNW</td><td class="b">35</td><td class="a"> </td></tr><tr class="st"><th class="c" colspan="2" scope="row">Total</th><td class="b"> </td><td class="c"> </td><td class="c">17.0</td><td class="c"> </td><td class="c"> </td><td class="a"> </td><td class="b"> </td><td class="c"> </td><td class="b"> </td><td class="b"> </td><td class="b"> </td><td class="a"> </td><td class="b"> </td><td class="c"> </td><td class="b"> </td><td class="b"> </td><td class="b"> </td><td class="a"> </td><td class="b"> </td><td class="a"> </td></tr></tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
+/climate/dwo/IDCJDW3001.latest.shtml
+Exception in thread Thread-1 (most likely raised during interpreter shutdown):
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+  File "/usr/lib/python2.7/threading.py", line 505, in run
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 646, in inner
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 498, in serve_forever
+  File "/usr/lib/python2.7/SocketServer.py", line 235, in serve_forever
+<type 'exceptions.AttributeError'>: 'NoneType' object has no attribute 'select'
+ * Restarting with stat
+  File "app.py", line 40
+    -
+    ^
+SyntaxError: invalid syntax
