@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block title %}Antarctica{% endblock %}
+
+{% block main_content %}
+
+<h2 class="sub-header">Weather Observations for Antarctica</h2>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr> 
+                {% for station in stations_a_z %}
+                <td><input type="button" value="{{ station.letter }}" onclick="loadFunction( '{{ station.url }}' )"; ></td>
+                {% endfor %}
+            </tr> 
+        </thead>
+        <tbody id="stations">
+            
+        </tbody>
+    </table>
+
+</div>
+
+{% endblock %}
