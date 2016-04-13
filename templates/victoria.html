@@ -2,24 +2,27 @@
 {% block title %}VIC{% endblock %}
 
 {% block main_content %}
-<h2 class="sub-header">Section title</h2>
-    <div class="table-responsive">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      {% for x in stations %}
-                      {{ x.url }}
-                      {% endfor %}
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
+
+<h2 class="sub-header">Weather Observations for Victoria</h2>
+<div class="table-responsive">
+    <table class="table table-striped">
+         <thead>
+            <tr>
+                <th>Victoria A-Z</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> 
+                {% for station in stations_a_z %}
+                <td><input type="button" value="{{ station.letter }}" onclick="loadFunction( '{{ station.url }}' )";></td>
+                {% endfor %}
+            </tr> 
+            <tr id="station">
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 {% endblock %}
