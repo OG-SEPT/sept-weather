@@ -12,7 +12,10 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                  <tr>
+                      {% for x in stations %}
+                      {{ x.url }}
+                      {% endfor %}
                   <td>1,001</td>
                   <td>Lorem</td>
                   <td>ipsum</td>
