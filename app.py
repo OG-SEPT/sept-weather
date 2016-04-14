@@ -108,7 +108,12 @@ def get_station_links(url):
 def get_station_data(url):
     url = "http://bom.gov.au/" + url
     page = requests.get(url)
+    soup = bs(page.text, 'html.parser')
     
+    content = soup.find('table', {'class':'data'})
+    print content
+    
+    return content
 
 
 if __name__ == "__main__":
