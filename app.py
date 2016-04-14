@@ -30,6 +30,56 @@ def get_nsw():
     
     return render_template('nsw.html', stations_a_z=stations_a_z)
 
+@app.route('/queensland')	
+def get_qld():
+    url = "http://www.bom.gov.au/climate/dwo/IDCJDW0400.shtml"
+    stations_a_z = get_station_links_a_z(url) 
+    
+    return render_template('qld.html', stations_a_z=stations_a_z)
+ 
+
+@app.route('/south_australia')
+def get_sa():
+   url = "http://www.bom.gov.au/climate/dwo/IDCJDW0500.shtml"
+   stations_a_z = get_station_links_a_z(url) 
+
+   return render_template('sa.html', stations_a_z=stations_a_z)
+	
+@app.route('/western_australia')
+def get_wa():
+    url = "http://www.bom.gov.au/climate/dwo/IDCJDW0600.shtml"
+    stations_a_z = get_station_links_a_z(url) 
+    
+    return render_template('wa.html', stations_a_z=stations_a_z)
+	
+@app.route('/act')
+def get_act():
+    url = "http://www.bom.gov.au/climate/dwo/IDCJDW0100.shtml"
+    stations_a_z = get_station_links_a_z(url) 
+    
+    return render_template('act.html', stations_a_z=stations_a_z)
+	
+@app.route('/tasmania')
+def get_tas():
+    url = "http://www.bom.gov.au/climate/dwo/IDCJDW0700.shtml"
+    stations_a_z = get_station_links_a_z(url) 
+    
+    return render_template('tas.html', stations_a_z=stations_a_z)
+	
+@app.route('/northern_territory')
+def get_nt():
+    url = "http://www.bom.gov.au/climate/dwo/IDCJDW0800.shtml"
+    stations_a_z = get_station_links_a_z(url) 
+    
+    return render_template('nt.html', stations_a_z=stations_a_z)
+	
+@app.route('/antarctica')
+def get_antarctica():
+    url = "http://www.bom.gov.au/climate/dwo/IDCJDW0920.shtml"
+    stations_a_z = get_station_links_a_z(url) 
+    
+    return render_template('antarctica.html', stations_a_z=stations_a_z)
+	
 
 # called from the site to return sation locations as json. 
 @app.route('/stations', methods=['GET'])
