@@ -11,13 +11,11 @@ function loadFunction(name) {
             items.innerHTML = "";
 
             $.each(result, function(index, value){
-                var stations_link = document.createElement('a');
-                var stations = document.createElement('tr');
+                var button = document.createElement('input');
+                button.setAttribute("type", "button");
+                button.setAttribute("value", value.station_name);
                 
-                stations.innerHTML = value.station_name;
-                stations_link.innerHTML = value.url;
-                items.appendChild(stations);
-                items.appendChild(stations_link);
+                items.appendChild(button);
 
                 console.log(value.station_name);
             });
