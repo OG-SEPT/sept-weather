@@ -1,5 +1,4 @@
 function loadFunction(name) {
-    console.log(name)
      
     $.ajax({
         type: 'GET',
@@ -12,30 +11,30 @@ function loadFunction(name) {
 
             $.each(result, function(index, value){
                 var button = document.createElement('input');
+                var link = value.url;
                 button.setAttribute("type", "button");
                 button.setAttribute("value", value.station_name);
-                button.setAttribute("onclick", onclick.getRequest);
+                button.addEventListener('click', function(){
+                    getRequest(value.url);
+                });
                 
                 items.appendChild(button);
-
-                console.log(value.station_name);
+                
             });
         }
     });
 }
 
 function getRequest(url){
-    
     $.ajax({
         type: 'GET',
-        url: stations_info,
-        data: url
+        url: "stations_info",
+        data: url,
         dataType: 'json',
         success: function(result){
-            console.log(result);
-           
+             
 
         }
             
-    })
+    });
 }

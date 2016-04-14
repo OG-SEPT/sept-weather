@@ -31,7 +31,7 @@ def get_nsw():
     return render_template('nsw.html', stations_a_z=stations_a_z)
 
 
-# called from the state site to return sation info as json. 
+# called from the site to return sation locations as json. 
 @app.route('/stations', methods=['GET'])
 def get_stations():
     url = request.query_string
@@ -39,6 +39,18 @@ def get_stations():
     links = get_station_links(url)
     
     return json.dumps(links)
+
+
+# called from the site to return station info as json.
+@app.route('/stations_info', methods=['GET'])
+def get_stations_info():
+    url = request.query_string
+    
+    data = get_station_data(url)
+
+    print url
+
+    return "hello"
 
 
 # returns the links to pages that contain the stations,  A-C, D-E, ect
@@ -88,7 +100,7 @@ def get_station_links(url):
         }
         
         links.append(item)
-
+    
 
     return links
 
