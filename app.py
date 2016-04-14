@@ -111,7 +111,14 @@ def get_station_data(url):
     soup = bs(page.text, 'html.parser')
     
     content = soup.find('table', {'class':'data'})
-    print content
+    content = soup.final_all('th', {'scope':'row'})
+    
+    print content 
+    scraped_data = []
+    for con in content:
+        date = con.find('th', {'class':'rb'})
+        
+    print date
     
     return content
 
