@@ -98,9 +98,7 @@ def get_stations_info():
     
     data = get_station_data(url)
 
-    print url
-
-    return "hello"
+    return json.dumps(data)
 
 
 # returns the links to pages that contain the stations,  A-C, D-E, ect
@@ -163,21 +161,63 @@ def get_station_data(url):
     content = soup.find('tbody')
     content = content.find_all('tr')
     
+    scraped = []
+    
     for con in content:
         date = con.find('th').get_text()
         td = con.find_all('td')
-        day = td[0]
-        min_temp = td[1]
+     
+        day = td[0].get_text()
+        minT = td[1].get_text()
+        maxT = td[2].get_text()
         
-
-        print "date: " + date
-        print "day:" + day
-        print "min_temp" + min_temp
-        print '\n'
-         
+        rain = td[3].get_text()
+        evap = td[4].get_text()
+        sun = td[5].get_text()
+       
+        dirW = td[6].get_text()
+        spdW = td[7].get_text()
+        timeW = td[8].get_text()
     
-
-    return content
+        temp9 = td[9].get_text()
+        rh9 = td[10].get_text()
+        cld9 = td[11].get_text()
+        dir9 = td[12].get_text()
+        spd9 = td[13].get_text()
+        mslp9 = td[14].get_text()
+        
+        temp3 = td[15].get_text()
+        rh3 = td[16].get_text()
+        cld3 = td[17].get_text()
+        dir3 = td[18].get_text()
+        spd3 = td[19].get_text()
+        
+        item = {
+            "date": date,
+            "day": day,
+            "minT": minT,
+            "maxT": maxT,
+            "rain": rain,
+            "evap": evap,
+            "sun": sun,
+            "dirW": dirW,
+            "spdW": spdW,
+            "timeW": timeW,
+            "temp9": temp9,
+            "rh9": rh9,
+            "cld9": cld9,
+            "dir9": dir9,
+            "spd9": spd9,
+            "mslp9": mslp9,
+            "temp3": temp3,
+            "rh3": rh3,
+            "cld3": cld3,
+            "dir3": dir3,
+            "spd3": spd3,
+        }
+        scraped.append(item)
+        
+    return scraped
 
 
 if __name__ == "__main__":

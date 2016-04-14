@@ -33,7 +33,22 @@ function getRequest(url){
         data: url,
         dataType: 'json',
         success: function(result){
-                 
+            var items = document.getElementById('station_data');
+            items.innerHTML = "";
+            
+            $.each(result, function(index, value){
+                var td = document.createElement('td');
+                
+                td.textContent = value.date; 
+                items.appendChild(td);
+                
+                var td = document.createElement('td');
+                td.textContent = value.day;
+                items.appendChild(td);                
+                                
+                var tr = document.createElement('tr');
+                items.appendChild(tr);
+            });   
 
         }
             
