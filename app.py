@@ -120,8 +120,17 @@ def get_station_data(url):
         
     print date
     
+    for con in content:
+        date = con.find('th').get_text()
+        day = con.find_all('td')[2].get_text()
+        print date
+        print day
+        print '\n'
+         
+    
+
     return content
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5001)
