@@ -31,15 +31,17 @@ def get_nsw():
     return render_template('nsw.html', stations_a_z=stations_a_z)
 
 
+# called from the state site to return sation info as json. 
 @app.route('/stations', methods=['GET'])
 def get_stations():
-    text = request.query_string
+    url = request.query_string
     
-    stations = get_stations_links(text)
+    links = get_station_links(url)
+    
+    return json.dumps(links)
 
-    return text
 
-
+# returns the links to pages that contain the stations,  A-C, D-E, ect
 def get_station_links_a_z(url):
     page = requests.get(url)
     soup = bs(page.text, 'html.parser')
@@ -66,11 +68,29 @@ def get_station_links_a_z(url):
     return links_a_z 
 
 
-def get_all_station_links(url):   
-    page = request.get(url)
+# returns all the links 
+def get_station_links(url):  
+    url = "http://bom.gov.au/" + url
+    page = requests.get(url)
     soup = bs(page.text, 'html.parser')
+    
+    content = soup.find('div', {'class': 'content'})
+    content = content.find_all('th', {'scope': 'row'})
+    
+    links = []
+    for con in content:
+        station_name = con.get_text()
+        url = con.find('a').get('href')
+        
+        item = {
+                'station_name': station_name,
+                'url': url,
+        }
+        
+        links.append(item)
 
-    return all_links
+
+    return links
 
 
 if __name__ == "__main__":

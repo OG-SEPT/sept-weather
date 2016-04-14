@@ -6,23 +6,18 @@
 <h2 class="sub-header">Weather Observations for Victoria</h2>
 <div class="table-responsive">
     <table class="table table-striped">
-         <thead>
-            <tr>
-                <th>Victoria A-Z</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
+        <thead>
             <tr> 
                 {% for station in stations_a_z %}
-                <td><input type="button" value="{{ station.letter }}" onclick="loadFunction( '{{ station.url }}' )";></td>
+                <td><input type="button" value="{{ station.letter }}" onclick="loadFunction( '{{ station.url }}' )"; ></td>
                 {% endfor %}
             </tr> 
-            <tr id="station">
-                
-            </tr>
+        </thead>
+        <tbody id="stations">
+            
         </tbody>
     </table>
+
 </div>
 
 {% endblock %}
