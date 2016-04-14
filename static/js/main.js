@@ -25,6 +25,7 @@ function loadFunction(name) {
     });
 }
 
+
 function getRequest(url){
     $.ajax({
         type: 'GET',
@@ -32,7 +33,7 @@ function getRequest(url){
         data: url,
         dataType: 'json',
         success: function(result){
-             
+                 
 
         }
             

@@ -165,9 +165,14 @@ def get_station_data(url):
     
     for con in content:
         date = con.find('th').get_text()
-        day = con.find_all('td')[2].get_text()
-        print date
-        print day
+        td = con.find_all('td')
+        day = td[0]
+        min_temp = td[1]
+        
+
+        print "date: " + date
+        print "day:" + day
+        print "min_temp" + min_temp
         print '\n'
          
     
