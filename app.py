@@ -108,7 +108,21 @@ def get_station_links(url):
 def get_station_data(url):
     url = "http://bom.gov.au/" + url
     page = requests.get(url)
+    soup = bs(page.text, 'html.parser')
     
+    content = soup.find('tbody')
+    content = content.find_all('tr')
+    
+    for con in content:
+        date = con.find('th').get_text()
+        day = con.find_all('td')[2].get_text()
+        print date
+        print day
+        print '\n'
+         
+    
+
+    return content
 
 
 if __name__ == "__main__":
