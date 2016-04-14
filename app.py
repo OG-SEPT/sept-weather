@@ -105,5 +105,11 @@ def get_station_links(url):
     return links
 
 
+def get_station_data(url):
+    url = "http://bom.gov.au/" + url
+    page = requests.get(url)
+    
+
+
 if __name__ == "__main__":
     app.run(debug=True)
