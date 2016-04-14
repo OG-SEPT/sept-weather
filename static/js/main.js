@@ -14,6 +14,7 @@ function loadFunction(name) {
                 var button = document.createElement('input');
                 button.setAttribute("type", "button");
                 button.setAttribute("value", value.station_name);
+                button.setAttribute("onclick", onclick.getRequest);
                 
                 items.appendChild(button);
 
@@ -21,4 +22,20 @@ function loadFunction(name) {
             });
         }
     });
+}
+
+function getRequest(url){
+    
+    $.ajax({
+        type: 'GET',
+        url: stations_info,
+        data: url
+        dataType: 'json',
+        success: function(result){
+            console.log(result);
+           
+
+        }
+            
+    })
 }
