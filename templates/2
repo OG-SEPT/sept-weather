@@ -1,24 +1,27 @@
 {% extends "layout.html" %}
-{% block title %}Favorites{% endblock %}
+{% block title %}VIC{% endblock %}
 
 {% block main_content %}
 
-<h2>Favorites</h2>
-
-<ul id="favs">
-    {% for fav in favorite %}
-    <li><input type="button" value="{{ fav[1] }}" onclick="getStationData('{{ fav[0] }}')"></li>
+<h2 class="sub-header">Weather Observations for Victoria</h2>
+<div id="favorite">
+    <input type="button" value="" Add station to favorites</h4> 
+</div>
+ {% for station in stations_a_z %}
+ <input type="button" value="{{ station.letter }}" onclick="loadFunction( '{{ station.url }}' )" >
     {% endfor %}
-</ul>
 
-<h4><input type="button" value="Reset Favorites" onclick="resetDatabase()"></h4>
+        <ul id="station">
+            <li></li>
+        </ul>
+        <ul id="add_favorite">
+            <li></li>
+        </ul>
 
-<div style="display:none;" class="table-responsive" id="stations_table">
-    <table class="table table-striped">
+<div style="display:none" class="table-responsive" id="stations_table">
+    <table class="table table-bordered">
         <thead>
             <tr>
-                <th>Temps</th>
-    
                 <th rowspan="4">Date</th>
                 <th rowspan="4">Day</th>
                 <th colspan="2">Temps</th>
@@ -68,7 +71,7 @@
                 <th>hPa</th>
             </tr>
         </thead>
-        <tbody id="station_data">
+        <tbody class="table table-bordered" id="station_data">
             <tr>
                 <th></th>
             </tr>
@@ -76,8 +79,10 @@
     </table>
 </div>
 
+<!-- Chart Button -->
 <form action="JavaScript:openChart('chart');" method="post">
     <button type="submit">VIEW CHART</button>
 </form>
-        
+
+
 {% endblock %}

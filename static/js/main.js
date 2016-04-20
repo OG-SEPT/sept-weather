@@ -35,6 +35,7 @@ function loadFunction(name) {
     });
 }
 
+
 // adds a station to favorite 
 // display graph here
 function addFavorite(url, name){
@@ -49,6 +50,7 @@ function addFavorite(url, name){
     });
 }
 
+
 // loads the station weather data
 function getStationData(url){
     $.ajax({
@@ -57,7 +59,9 @@ function getStationData(url){
         data: url,
         dataType: 'json',
         success: function(result){
-
+            
+            document.getElementById('stations_table').style.display = "block"
+             
             // handles the wetaher station data
             var items = document.getElementById('station_data');
             items.innerHTML = "";
@@ -162,6 +166,7 @@ function getStationData(url){
     });
 }
 
+
 // reset the database 
 function resetDatabase() {
     
@@ -171,10 +176,13 @@ function resetDatabase() {
         success: function(result){
             
             console.log("success");
+
+            document.getElementById("favs").style="display:none";
         }
     });
+}
 
-    
+
 // Chart 
 function openChart(url) {
     
@@ -185,7 +193,7 @@ function openChart(url) {
 
 // import the chart google API stuff
 google.charts.load('current', {'packages':['line']});
-    google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawChart);
 
 
 function drawChart() {
@@ -233,3 +241,4 @@ function drawChart() {
 
     chart.draw(data, options);
 }
+

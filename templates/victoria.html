@@ -4,29 +4,24 @@
 {% block main_content %}
 
 <h2 class="sub-header">Weather Observations for Victoria</h2>
-<div id="favorite">
-    <input type="button" value="" Add station to favorites</h4> 
+
+<div>
+    {% for station in stations_a_z %}
+        <input type="button" value="{{ station.letter }}" onclick="loadFunction( '{{ station.url }}' )" >
+    {% endfor %}
 </div>
-<div class="table-responsive">
-    <table class="table table-striped">
-        <thead>
-            <tr> 
-                {% for station in stations_a_z %}
-                <td><input type="button" value="{{ station.letter }}" onclick="loadFunction( '{{ station.url }}' )" ></td>
-                {% endfor %}
-            </tr> 
 
-        </thead>
-        <tbody id="station">
-        </tbody>
-        <tbody id="add_favorite">
-        </tbody>
+<hr>
 
-
-    </table>
+<div id="station">
+</div> 
+<div id="add_favorite">
 </div>
-<div class="table-responsive">
-    <table class="table table-striped">
+
+<hr>
+
+<div style="display:none" class="table-responsive" id="stations_table">
+    <table class="table table-bordered">
         <thead>
             <tr>
                 <th rowspan="4">Date</th>
@@ -78,7 +73,7 @@
                 <th>hPa</th>
             </tr>
         </thead>
-        <tbody id="station_data">
+        <tbody class="table table-bordered" id="station_data">
             <tr>
                 <th></th>
             </tr>
