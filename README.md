@@ -2,9 +2,9 @@ A weather service built using Flask for the web.
 -------------------------------------------------
 *CONTRIBUTORS:
 
-Ben Diep - s3462344
-Damon Toumbourou - s3019592
-Alex Cheong - s3436036
+Ben Diep - s3462344  
+Damon Toumbourou - s3019592  
+Alex Cheong - s3436036  
 Doeun Shin - s3392298
 
 *TUTOR:
@@ -21,7 +21,7 @@ any notes you would like provide about things of interest your team has done tha
 
 *TEAM MEMBERS CONTRIBUTIONS
 
-BEN DIEP 					00%
-DAMON TOUMBOUROU 			00%
-ALEX CHEONG 				00%
+BEN DIEP 					00%  
+DAMON TOUMBOUROU 			00%  
+ALEX CHEONG 				00%  
 DOEUN SHIN 					00%
