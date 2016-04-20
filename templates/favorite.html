@@ -5,9 +5,13 @@
 <h2>Favorites</h2>
 <ul>
     {% for fav in favorite %}
-    <li>{{ fav[1] }}</li>
+    <li><input type="button" value="{{ fav[1] }}" onclick="getStationData('{{ fav[0] }}')"></li>
     {% endfor %}
 </ul>
 
-
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Temps</th>
 {% endblock %}
