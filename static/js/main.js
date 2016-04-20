@@ -133,7 +133,7 @@ function getStationData(url){
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
-                td.textContenalue.rh3;
+                td.textContent = value.rh3;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
@@ -161,6 +161,4 @@ function getStationData(url){
         }
             
     });
-    
-    
 }
