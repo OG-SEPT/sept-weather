@@ -27,7 +27,7 @@ function loadFunction(name) {
                 fav_button.setAttribute("type", "button");
                 fav_button.setAttribute("value", "fav");
                 fav_button.addEventListener('click', function(){
-                    addFavorite(value.url);
+                    addFavorite(value.url, value.station_name);
                 });
                 station_data.appendChild(fav_button); 
             });
@@ -37,12 +37,12 @@ function loadFunction(name) {
 
 // adds a station to favorite 
 // display graph here
-function addFavorite(url){
+function addFavorite(url, station_name){
     
     $.ajax({
         type: 'GET',
         url: 'station_fav',
-        data: url,
+        data: {'url' : url, 'name' : station_name},
         dataType: 'json',
         success: function(result){
             console.log("success!: " + result);
