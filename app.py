@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, g
 from bs4 import BeautifulSoup as bs
 import requests
 import re
@@ -10,16 +10,31 @@ from time import sleep
 app = Flask(__name__)
 
 
+# for database connection
+@app.before_request
+def before_request():
+    g.db = sqlite3.connect("data/septweather_db")
+
+
+# for database close connection
+@app.teardown_request
+def teardown_request(exception):
+    if hasattr(g, 'db'):
+        g.db.close()
+
+
+# all the routes below
+######################################
 @app.route('/')
 def home():
     return render_template('index.html')
 
 
-@app.route('/favorites')
+@app.route('/favorite')
 def favorites():
-    
+    favorite = g.db.execute("SELECT url, name FROM Favorites").fetchall()
 
-    return render_template('favorites.html') 
+    return render_template('favorite.html', favorite=favorite) 
     
 
 @app.route('/victoria')
@@ -59,7 +74,8 @@ def get_wa():
     stations_a_z = get_station_links_a_z(url) 
     
     return render_template('wa.html', stations_a_z=stations_a_z)
-	
+
+
 @app.route('/act')
 def get_act():
     url = "http://www.bom.gov.au/climate/dwo/IDCJDW0100.shtml"
@@ -91,11 +107,13 @@ def get_antarctica():
     
     return render_template('antarctica.html', stations_a_z=stations_a_z)
 
+
 @app.route('/projectpage')
 def get_projectpage():
 
     return render_template('projectpage.html')
         
+
 @app.route('/chart')
 def chart():
     
@@ -125,9 +143,11 @@ def get_stations_info():
 # adds a station to favorite
 @app.route('/station_fav', methods=['GET'])
 def add_favorite():
-    url = request.query_string
-     
+    url = request.args.get('url')
+    name = request.args.get('name')
     
+    g.db.execute("INSERT INTO Favorites (url, name) VALUES (?, ?);", [url, name])
+    g.db.commit()
 
     return json.dumps(url)
 
