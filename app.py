@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-
+    
     return render_template('index.html')
 
 
@@ -83,7 +83,12 @@ def get_antarctica():
 @app.route('/projectpage')
 def get_projectpage():
 
-        return render_template('projectpage.html')
+    return render_template('projectpage.html')
+        
+@app.route('/chart')
+def chart():
+    
+    return render_template('chart.html')
 	
 
 
