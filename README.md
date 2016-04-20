@@ -4,7 +4,6 @@ _________________________________________________
 A weather service web application built using the python Flask framework.
 -------------------------------------------------
 CONTRIBUTORS:
-
 Ben Diep - s3462344  
 Damon Toumbourou - s3019592  
 Alex Cheong - s3436036  
@@ -30,7 +29,6 @@ TEAM MEMBERS CONTRIBUTIONS
 __________________________
 A note on contributions: All members were very involved and engaged in the project during the development.
 We are all in agreement that all members contibuted equally. 
-
 
 BEN DIEP 		25%  
 DAMON TOUMBOUROU        25%  
