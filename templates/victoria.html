@@ -4,6 +4,9 @@
 {% block main_content %}
 
 <h2 class="sub-header">Weather Observations for Victoria</h2>
+<div id="favorite">
+    <input type="button" value="" Add station to favorites</h4> 
+</div>
 <div class="table-responsive">
     <table class="table table-striped">
         <thead>
@@ -12,10 +15,14 @@
                 <td><input type="button" value="{{ station.letter }}" onclick="loadFunction( '{{ station.url }}' )"; ></td>
                 {% endfor %}
             </tr> 
+
         </thead>
-        <tbody id="stations">
-            
+        <tbody id="station">
         </tbody>
+        <tbody id="add_favorite">
+        </tbody>
+
+
     </table>
 </div>
 <div class="table-responsive">

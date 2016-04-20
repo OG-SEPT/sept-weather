@@ -107,6 +107,16 @@ def get_stations_info():
     return json.dumps(data)
 
 
+# adds a station to favorite
+@app.route('/station_fav', methods=['GET'])
+def add_favorite():
+    url = request.query_string
+    
+    
+
+    return json.dumps(url)
+
+
 # returns the links to pages that contain the stations,  A-C, D-E, ect
 def get_station_links_a_z(url):
     page = requests.get(url)
@@ -114,7 +124,7 @@ def get_station_links_a_z(url):
     
     content = soup.find('h2')
     content = content.find_all('a')
-    
+      
     links_a_z = []
     for con in content:
         link = con.get('href')
