@@ -1,13 +1,24 @@
 #!/usr/bin/python
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, g
 from bs4 import BeautifulSoup as bs
 import requests
 import re
 import json
+import sqlite3
 from time import sleep
 
 app = Flask(__name__)
 
+# for database connection
+@app.before_request
+def before_request():
+	g.db = sqlite3.connect("data/septweather_db")
+	
+# for database close connection
+@app.teardown_request
+def teardown_request(exception):
+	if hasattr(g, 'db'):
+		g.db.close();
 
 @app.route('/')
 def home():
@@ -110,11 +121,16 @@ def get_stations_info():
 # adds a station to favorite
 @app.route('/station_fav', methods=['GET'])
 def add_favorite():
-    url = request.query_string
+    url = request.args.get('url')
+    name = request.args.get('station_name')
     
+    print "url:    "
+    print url
+    print "name:   "
+    print name
     
 
-    return json.dumps(url)
+    return json.dumps(url, name)
 
 
 # returns the links to pages that contain the stations,  A-C, D-E, ect
