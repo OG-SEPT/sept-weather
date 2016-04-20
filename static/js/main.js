@@ -161,3 +161,16 @@ function getStationData(url){
             
     });
 }
+
+
+function resetDatabase() {
+    
+    $.ajax({
+        type: 'GET',
+        url: 'reset_database',
+        success: function(result){
+            
+            console.log("success");
+        }
+    });
+}

@@ -23,8 +23,10 @@ def teardown_request(exception):
         g.db.close()
 
 
-# all the routes below
-######################################
+############################################
+# page routes below
+#############################################
+
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -120,6 +122,10 @@ def chart():
     return render_template('chart.html')
 	
 
+###############################################################
+# all the routes for API below
+##############################################################
+
 # called from the site to return sation locations as json. 
 @app.route('/stations', methods=['GET'])
 def get_stations():
@@ -151,6 +157,18 @@ def add_favorite():
 
     return json.dumps(url)
 
+
+@app.route('/reset_database', methods=['GET'])
+def reset_database():
+    g.db.execute("DELETE FROM Favorites;")
+    g.db.commit()
+    
+    return "Successful Reset"
+
+
+################################################
+# utility functions for scraping data 
+#################################################
 
 # returns the links to pages that contain the stations,  A-C, D-E, ect
 def get_station_links_a_z(url):

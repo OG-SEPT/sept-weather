@@ -8,10 +8,11 @@
     <li><input type="button" value="{{ fav[1] }}" onclick="getStationData('{{ fav[0] }}')"></li>
     {% endfor %}
 </ul>
-
+<h4><input type="button" value="Reset Favorites" onclick="resetDatabase()"></h4>
 <div class="table-responsive">
     <table class="table table-striped">
         <thead>
             <tr>
                 <th>Temps</th>
+    
 {% endblock %}
