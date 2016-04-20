@@ -12,7 +12,7 @@
         <thead>
             <tr> 
                 {% for station in stations_a_z %}
-                <td><input type="button" value="{{ station.letter }}" onclick="loadFunction( '{{ station.url }}' )"; ></td>
+                <td><input type="button" value="{{ station.letter }}" onclick="loadFunction( '{{ station.url }}' )" ></td>
                 {% endfor %}
             </tr> 
 

@@ -226,7 +226,7 @@ function drawChart() {
             title: 'Weather Chart',
         },
         width: 1000,
-        height: 600,
+        height: 600
     };
 
     var chart = new google.charts.Line(document.getElementById('linechart_material'));
