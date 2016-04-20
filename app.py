@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from flask import Flask, render_template, request, g
+from flask import Flask, render_template, request
 from bs4 import BeautifulSoup as bs
 import requests
 import re
@@ -9,22 +9,18 @@ from time import sleep
 
 app = Flask(__name__)
 
-# for database connection
-@app.before_request
-def before_request():
-	g.db = sqlite3.connect("data/septweather_db")
-	
-# for database close connection
-@app.teardown_request
-def teardown_request(exception):
-	if hasattr(g, 'db'):
-		g.db.close();
 
 @app.route('/')
 def home():
-
     return render_template('index.html')
 
+
+@app.route('/favorites')
+def favorites():
+    
+
+    return render_template('favorites.html') 
+    
 
 @app.route('/victoria')
 def get_victoria():
@@ -55,7 +51,8 @@ def get_sa():
    stations_a_z = get_station_links_a_z(url) 
 
    return render_template('sa.html', stations_a_z=stations_a_z)
-	
+
+
 @app.route('/western_australia')
 def get_wa():
     url = "http://www.bom.gov.au/climate/dwo/IDCJDW0600.shtml"
@@ -69,21 +66,24 @@ def get_act():
     stations_a_z = get_station_links_a_z(url) 
     
     return render_template('act.html', stations_a_z=stations_a_z)
-	
+
+
 @app.route('/tasmania')
 def get_tas():
     url = "http://www.bom.gov.au/climate/dwo/IDCJDW0700.shtml"
     stations_a_z = get_station_links_a_z(url) 
     
     return render_template('tas.html', stations_a_z=stations_a_z)
-	
+
+
 @app.route('/northern_territory')
 def get_nt():
     url = "http://www.bom.gov.au/climate/dwo/IDCJDW0800.shtml"
     stations_a_z = get_station_links_a_z(url) 
     
     return render_template('nt.html', stations_a_z=stations_a_z)
-	
+
+
 @app.route('/antarctica')
 def get_antarctica():
     url = "http://www.bom.gov.au/climate/dwo/IDCJDW0920.shtml"
@@ -94,9 +94,13 @@ def get_antarctica():
 @app.route('/projectpage')
 def get_projectpage():
 
-        return render_template('projectpage.html')
+    return render_template('projectpage.html')
+        
+@app.route('/chart')
+def chart():
+    
+    return render_template('chart.html')
 	
-
 
 # called from the site to return sation locations as json. 
 @app.route('/stations', methods=['GET'])
@@ -121,16 +125,11 @@ def get_stations_info():
 # adds a station to favorite
 @app.route('/station_fav', methods=['GET'])
 def add_favorite():
-    url = request.args.get('url')
-    name = request.args.get('station_name')
-    
-    print "url:    "
-    print url
-    print "name:   "
-    print name
+    url = request.query_string
+     
     
 
-    return json.dumps(url, name)
+    return json.dumps(url)
 
 
 # returns the links to pages that contain the stations,  A-C, D-E, ect

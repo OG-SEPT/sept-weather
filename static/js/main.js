@@ -27,7 +27,7 @@ function loadFunction(name) {
                 fav_button.setAttribute("type", "button");
                 fav_button.setAttribute("value", "fav");
                 fav_button.addEventListener('click', function(){
-                    addFavorite(value.url, value.station_name);
+                    addFavorite(value.url);
                 });
                 station_data.appendChild(fav_button); 
             });
@@ -37,12 +37,12 @@ function loadFunction(name) {
 
 // adds a station to favorite 
 // display graph here
-function addFavorite(url, station_name){
+function addFavorite(url){
     
     $.ajax({
         type: 'GET',
         url: 'station_fav',
-        data: {'url' : url, 'name' : station_name},
+        data: url,
         dataType: 'json',
         success: function(result){
             console.log("success!: " + result);
@@ -133,7 +133,7 @@ function getStationData(url){
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
-                td.textContenalue.rh3;
+                td.textContent = value.rh3;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
@@ -161,6 +161,4 @@ function getStationData(url){
         }
             
     });
-    
-    
 }

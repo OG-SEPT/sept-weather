@@ -7,8 +7,8 @@ print "Opened database successfully";
 
 conn.execute('''CREATE TABLE FAVOURITES
         (ID        INTEGER PRIMARY KEY AUTOINCREMENT,
-         NAME  TEXT NOT NULL,
-		 URL	TEXT NOT NULL);''')
+        NAME  TEXT NOT NULL,
+        URL	TEXT NOT NULL);''')
 print "Table created successfully";
 
 conn.close()
