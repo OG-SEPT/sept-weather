@@ -79,7 +79,13 @@ def get_antarctica():
     stations_a_z = get_station_links_a_z(url) 
     
     return render_template('antarctica.html', stations_a_z=stations_a_z)
+
+@app.route('/projectpage')
+def get_projectpage():
+
+        return render_template('projectpage.html')
 	
+
 
 # called from the site to return sation locations as json. 
 @app.route('/stations', methods=['GET'])
