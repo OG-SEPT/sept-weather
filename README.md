@@ -1,36 +1,56 @@
-_________________________________________________
-          SEPT WEATHER
-_________________________________________________
+
+-------------------------------------------------------------------------
+          					SEPT WEATHER
+-------------------------------------------------------------------------
+
 A weather service web application built using the python Flask framework.
--------------------------------------------------
-CONTRIBUTORS:
-Ben Diep - s3462344  
-Damon Toumbourou - s3019592  
-Alex Cheong - s3436036  
-Doeun Shin - s3392298  
+
+-------------------------------------------------------------------------
+TEAM MEMBERS AND CONTRIBUTION PERCENT:
+-------------------------------------------------------------------------
+
+Ben Diep           s3462344    25%			 
+Damon Toumbourou   s3019592    25%
+Alex Cheong        s3436036    25%
+Doeun Shin         s3392298    25%
   
+
+-------------------------------------------------------------------------
 TUTOR:
+-------------------------------------------------------------------------
 A Homy Ash - Friday 8:30 AM at 14.09.23
 
-NOTES and TECHNICAL STUFF:
-Built using Flask a webframework written in python.
 
-We have designed our application using MVC principles.
-Allowing front end to focus on front and back on back. 
+--------------------------------------------------------------------------
+TECHNICAL STUFF:
+--------------------------------------------------------------------------
 
-SQLLite3: database uses sqlite3 which is built in to python and 
-flask includes some helpful functions for dealing with databases via sqllite3.
+FRAMEWORK: 
+----------
+We used Flask a Python web framework with built-in development server 
+and debugger. It includes Jinja2 for templating we took advantage of.
 
+FRONT-END:
+----------
+We used Javascript for the front and made use of AJAX many times on our
+pages. 
 
+BACKEND:
+--------
+We used Python and as mentioned the Flask framework.
+Our application uses the MVC design. Python flask handles the routes and 
+controllers serves the views and handles database queries.
 
+DATABASE:
+---------
+We used sqlite3 which is built in to python and flask includes some helpful
+functions for dealing with databases.
 
-__________________________
-TEAM MEMBERS CONTRIBUTIONS
-__________________________
-A note on contributions: All members were very involved and engaged in the project during the development.
-We are all in agreement that all members contibuted equally. 
-
-BEN DIEP 		25%  
-DAMON TOUMBOUROU        25%  
-ALEX CHEONG 		25%  
-DOEUN SHIN 	        25%  
+--------------------------------------------------------------------------
+REQUIREMENTS: the Python modules required to run our program
+--------------------------------------------------------------------------
+Flask==0.10.1
+requests=2.9.1
+bs4=4.4.1
+re=2.2.1
+json=2.0.9

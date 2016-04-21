@@ -1,0 +1,92 @@
+[
+    {
+        "user": "U0S10RU0M",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0S10RU0M|benji> has joined the channel",
+        "ts": "1458131902.000002"
+    },
+    {
+        "user": "U0S17S3K3",
+        "inviter": "U0S10RU0M",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0S17S3K3|doeun> has joined the channel",
+        "ts": "1458131903.000003"
+    },
+    {
+        "user": "U0SGR4XNZ",
+        "inviter": "U0S10RU0M",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0SGR4XNZ|alexcheong> has joined the channel",
+        "ts": "1458131903.000004"
+    },
+    {
+        "type": "message",
+        "user": "U0SGR4XNZ",
+        "text": "hi",
+        "ts": "1458131914.000005"
+    },
+    {
+        "user": "U0S10RU0M",
+        "purpose": "dance",
+        "type": "message",
+        "subtype": "channel_purpose",
+        "text": "<@U0S10RU0M|benji> set the channel purpose: dance",
+        "ts": "1458132095.000006"
+    },
+    {
+        "user": "U0S10RU0M",
+        "topic": "Yoyo",
+        "type": "message",
+        "subtype": "channel_topic",
+        "text": "<@U0S10RU0M|benji> set the channel topic: Yoyo",
+        "ts": "1458132104.000007"
+    },
+    {
+        "type": "message",
+        "user": "U0SGR4XNZ",
+        "text": "the invite button is right up there right",
+        "ts": "1458132108.000008"
+    },
+    {
+        "type": "message",
+        "user": "U0SGR4XNZ",
+        "text": "as in below <#C0T3K5URG>",
+        "ts": "1458132113.000009"
+    },
+    {
+        "type": "message",
+        "user": "U0SGR4XNZ",
+        "text": "yeah",
+        "ts": "1458132150.000010"
+    },
+    {
+        "user": "U0S10RU0M",
+        "type": "message",
+        "subtype": "channel_leave",
+        "text": "<@U0S10RU0M|benji> has left the channel",
+        "ts": "1458132584.000011"
+    },
+    {
+        "user": "U0S10RU0M",
+        "inviter": "U0S17S3K3",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0S10RU0M|benji> has joined the channel",
+        "ts": "1458132594.000012"
+    },
+    {
+        "user": "U0S10RU0M",
+        "members": [
+            "U0S10RU0M",
+            "U0S17S3K3",
+            "U0SGR4XNZ"
+        ],
+        "type": "message",
+        "subtype": "channel_archive",
+        "text": "<@U0S10RU0M|benji> archived the channel (w\/ 3 members)",
+        "ts": "1458132704.000013"
+    }
+]
