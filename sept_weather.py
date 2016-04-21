@@ -104,10 +104,13 @@ def get_nt():
 
 @app.route('/antarctica')
 def get_antarctica():
-    url = "http://www.bom.gov.au/climate/dwo/IDCJDW0920.shtml"
-    stations_a_z = get_station_links_a_z(url) 
-    
-    return render_template('antarctica.html', stations_a_z=stations_a_z)
+    url = "climate/dwo/IDCJDW0920.shtml"
+    stations_links = get_station_links(url) 
+    print "station links: " 
+    for link in stations_links:
+        print link
+
+    return render_template('antarctica.html', stations_links=stations_links)
 
 
 @app.route('/projectpage')

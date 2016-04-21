@@ -67,91 +67,183 @@ function getStationData(url){
             items.innerHTML = "";
             
             $.each(result, function(index, value){
-                var td = document.createElement('td');
+                var td = document.createElement('td')
+                td.style.backgroundColor = '#C5E1FC';
                 td.textContent = value.date; 
                 items.appendChild(td);
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5';
                 td.textContent = value.day;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
                 td.textContent = value.minT;            // MIN
+                td.style.backgroundColor = '#C5E1FC'
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
                 td.textContent = value.maxT;            // MAX
+                td.style.backgroundColor = '#FAE8C5'
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
                 td.textContent = value.rain;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
                 td.textContent = value.evap;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
                 td.textContent = value.sun;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
                 td.textContent = value.dirW;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
                 td.textContent = value.spdW;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
                 td.textContent = value.timeW;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
                 td.textContent = value.temp9;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
+                td.textContent = value.timeW;
+                items.appendChild(td);  
+                
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
+                td.textContent = value.temp9;
+                items.appendChild(td);  
+                
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
                 td.textContent = value.rh9;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
                 td.textContent = value.cld9;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
+                td.textContent = value.rh9;
+                items.appendChild(td);  
+                
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
+                td.textContent = value.cld9;
+                items.appendChild(td);  
+                
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
                 td.textContent = value.dir9;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
                 td.textContent = value.spd9;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
                 td.textContent = value.mslp9;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
+                td.textContent = value.spd9;
+                items.appendChild(td);  
+                
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
+                td.textContent = value.mslp9;
+                items.appendChild(td);  
+                
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
+                td.textContent = value.spd9;
+                items.appendChild(td);  
+                
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
+                td.textContent = value.mslp9;
+                items.appendChild(td);  
+                
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
+                td.textContent = value.spd9;
+                items.appendChild(td);  
+                
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
+                td.textContent = value.mslp9;
+                items.appendChild(td);  
+                
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
                 td.textContent = value.temp3;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
-                td.textContent = value.rh3;
+                td.style.backgroundColor = '#FAE8C5'
+                td.textContent = value.mslp9;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
+                td.textContent = value.temp3;
+                items.appendChild(td);  
+                
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
+                td.textContent = value.mslp9;
+                items.appendChild(td);  
+                
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
                 td.textContent = value.cld3;
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
+                td.textContent = value.mslp9;
+                items.appendChild(td);  
+                
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
+                td.textContent = value.cld3;
+                items.appendChild(td);  
+                
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
                 td.textContent = value.dir3;
                 items.appendChild(td);
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#C5E1FC'
                 td.textContent = value.spd3;
                 items.appendChild(td);    
                 
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#FAE8C5'
                 td.textContent = value.mslp3;
                 items.appendChild(td);  
                          
