@@ -1,0 +1,242 @@
+[
+    {
+        "text": "",
+        "bot_id": "B0THPV16H",
+        "attachments": [
+            {
+                "fallback": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/compare\/ad4e3e531e37...4b5f2dca1b68|2 new commits> by Damon Toumbourou",
+                "text": "`<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/b52d4d5054740b669c930fcb2529902ec5b23282|b52d4d5>`  working on pulling data - Damon Toumbourou\n `<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/4b5f2dca1b6888fb7a5815d60caf0f8b76c1931c|4b5f2dc>`  Merge branch 'master' of <https:\/\/github.com\/OG-SEPT\/sept-weather> - Damon Toumbourou",
+                "pretext": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/compare\/ad4e3e531e37...4b5f2dca1b68|2 new commits> by Damon Toumbourou:",
+                "id": 1,
+                "color": "4183C4",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1460536018.000004"
+    },
+    {
+        "text": "",
+        "bot_id": "B0THPV16H",
+        "attachments": [
+            {
+                "fallback": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/d408bfa3400f08f125ed8457b04dd594b95e5700|1 new commit> by Damon Toumbourou",
+                "text": "`<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/d408bfa3400f08f125ed8457b04dd594b95e5700|d408bfa>`  ajax and weather api finally working! Damn sun. - Damon Toumbourou",
+                "pretext": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> 1 new commit by Damon Toumbourou:",
+                "id": 1,
+                "color": "4183C4",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1460556960.000002"
+    },
+    {
+        "text": "",
+        "bot_id": "B0THPV16H",
+        "attachments": [
+            {
+                "fallback": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/e2cc6826362ab573e8906d881a7efbb490ded60d|1 new commit> by Damon Toumbourou",
+                "text": "`<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/e2cc6826362ab573e8906d881a7efbb490ded60d|e2cc682>`  working on ajax - Damon Toumbourou",
+                "pretext": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> 1 new commit by Damon Toumbourou:",
+                "id": 1,
+                "color": "4183C4",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1460605682.000002"
+    },
+    {
+        "text": "",
+        "bot_id": "B0THPV16H",
+        "attachments": [
+            {
+                "fallback": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/b880f718ca491db84e7f2a12db6ef7d30ddba8f4|1 new commit> by Ben Diep",
+                "text": "`<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/b880f718ca491db84e7f2a12db6ef7d30ddba8f4|b880f71>`  other states - Ben Diep",
+                "pretext": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> 1 new commit by Ben Diep:",
+                "id": 1,
+                "color": "4183C4",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1460608887.000003"
+    },
+    {
+        "text": "",
+        "bot_id": "B0THPV16H",
+        "attachments": [
+            {
+                "fallback": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/compare\/b880f718ca49...cb6b848afc1f|2 new commits> by Damon Toumbourou",
+                "text": "`<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/e64bd4654eb79775bed0644372778579928f2cca|e64bd46>`  ajax - Damon Toumbourou\n `<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/cb6b848afc1fd64caee1b10f42855959135aa3c1|cb6b848>`  Merge branch 'master' of <https:\/\/github.com\/OG-SEPT\/sept-weather> - Damon Toumbourou",
+                "pretext": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/compare\/b880f718ca49...cb6b848afc1f|2 new commits> by Damon Toumbourou:",
+                "id": 1,
+                "color": "4183C4",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1460610156.000004"
+    },
+    {
+        "text": "",
+        "bot_id": "B0THPV16H",
+        "attachments": [
+            {
+                "fallback": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/de935b496bb876390947e3d1c3df811d46fa0d0b|1 new commit> by Ben Diep",
+                "text": "`<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/de935b496bb876390947e3d1c3df811d46fa0d0b|de935b4>`  get request - Ben Diep",
+                "pretext": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> 1 new commit by Ben Diep:",
+                "id": 1,
+                "color": "4183C4",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1460611095.000005"
+    },
+    {
+        "text": "",
+        "bot_id": "B0THPV16H",
+        "attachments": [
+            {
+                "fallback": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/37d3a9a01dcc51f2aeda08f280a5778514c125e5|1 new commit> by Alex Cheong",
+                "text": "`<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/37d3a9a01dcc51f2aeda08f280a5778514c125e5|37d3a9a>`  implement and connect state files - Alex Cheong",
+                "pretext": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> 1 new commit by Alex Cheong:",
+                "id": 1,
+                "color": "4183C4",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1460611365.000006"
+    },
+    {
+        "text": "",
+        "bot_id": "B0THPV16H",
+        "attachments": [
+            {
+                "fallback": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/compare\/37d3a9a01dcc...63ec308e1b27|2 new commits> by Damon Toumbourou",
+                "text": "`<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/15a7c9a25710da4d0616fc53a6b5e1686e56313a|15a7c9a>`  second ajax working - Damon Toumbourou\n `<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/63ec308e1b27931898e43998f3e7e6247dc52580|63ec308>`  merge - Damon Toumbourou",
+                "pretext": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/compare\/37d3a9a01dcc...63ec308e1b27|2 new commits> by Damon Toumbourou:",
+                "id": 1,
+                "color": "4183C4",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1460613368.000007"
+    },
+    {
+        "text": "",
+        "bot_id": "B0THPV16H",
+        "attachments": [
+            {
+                "fallback": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/af29b59085cad68da10da39ab7edff1be6ffa1ba|1 new commit> by System Administrator",
+                "text": "`<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/af29b59085cad68da10da39ab7edff1be6ffa1ba|af29b59>`  update states's icon - System Administrator",
+                "pretext": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> 1 new commit by System Administrator:",
+                "id": 1,
+                "color": "4183C4",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1460614527.000008"
+    },
+    {
+        "text": "",
+        "bot_id": "B0THPV16H",
+        "attachments": [
+            {
+                "fallback": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/compare\/af29b59085ca...df82cd7bdc6a|2 new commits> by Ben Diep",
+                "text": "`<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/84d6e895bf2b2c5f6c8d6965bb817f1753414ab6|84d6e89>`  scraped data - Ben Diep\n `<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/df82cd7bdc6a01afc4503a0ce089862d3f70a6e6|df82cd7>`  Merge branch 'master' of <https:\/\/github.com\/OG-SEPT\/sept-weather> - Ben Diep",
+                "pretext": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/compare\/af29b59085ca...df82cd7bdc6a|2 new commits> by Ben Diep:",
+                "id": 1,
+                "color": "4183C4",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1460614663.000009"
+    },
+    {
+        "text": "",
+        "bot_id": "B0THPV16H",
+        "attachments": [
+            {
+                "fallback": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/37cd72d27f16bab9e69f84e6263b88348a228d2a|1 new commit> by Alex Cheong",
+                "text": "`<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/37cd72d27f16bab9e69f84e6263b88348a228d2a|37cd72d>`  remove code - Alex Cheong",
+                "pretext": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> 1 new commit by Alex Cheong:",
+                "id": 1,
+                "color": "4183C4",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1460615683.000010"
+    },
+    {
+        "text": "",
+        "bot_id": "B0THPV16H",
+        "attachments": [
+            {
+                "fallback": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> <https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/88e0847e264915159545cd4f267be090a6bdf9b0|1 new commit> by Alex Cheong",
+                "text": "`<https:\/\/github.com\/OG-SEPT\/sept-weather\/commit\/88e0847e264915159545cd4f267be090a6bdf9b0|88e0847>`  fix missing code - Alex Cheong",
+                "pretext": "<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/master|[sept-weather:master]> 1 new commit by Alex Cheong:",
+                "id": 1,
+                "color": "4183C4",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1460616229.000011"
+    }
+]

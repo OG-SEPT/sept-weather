@@ -1,0 +1,92 @@
+[
+    {
+        "user": "U0SGR4XNZ",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0SGR4XNZ|alexcheong> has joined the channel",
+        "ts": "1458256626.000002"
+    },
+    {
+        "user": "U0S17S3K3",
+        "inviter": "U0SGR4XNZ",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0S17S3K3|doeun> has joined the channel",
+        "ts": "1458256628.000003"
+    },
+    {
+        "user": "U0S10RU0M",
+        "inviter": "U0SGR4XNZ",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0S10RU0M|benji> has joined the channel",
+        "ts": "1458256628.000004"
+    },
+    {
+        "user": "U0SGR4XNZ",
+        "purpose": "Updates from other tools goes here",
+        "type": "message",
+        "subtype": "channel_purpose",
+        "text": "<@U0SGR4XNZ|alexcheong> set the channel purpose: Updates from other tools goes here",
+        "ts": "1458256628.000005"
+    },
+    {
+        "user": "U0RV0TVFV",
+        "inviter": "U0SGR4XNZ",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0RV0TVFV|damon> has joined the channel",
+        "ts": "1458256628.000006"
+    },
+    {
+        "text": "added an integration to this channel: <https:\/\/sept-cs.slack.com\/services\/B0TJ4QSKH|Trello>",
+        "bot_id": "B0TJ4QSKH",
+        "type": "message",
+        "subtype": "bot_add",
+        "user": "U0SGR4XNZ",
+        "ts": "1458256630.000007"
+    },
+    {
+        "text": "added an integration to this channel: <https:\/\/sept-cs.slack.com\/services\/B0THPV16H|github>",
+        "bot_id": "B0THPV16H",
+        "type": "message",
+        "subtype": "bot_add",
+        "user": "U0S10RU0M",
+        "ts": "1458257066.000008"
+    },
+    {
+        "text": "",
+        "bot_id": "B0TJ4QSKH",
+        "mrkdwn": true,
+        "attachments": [
+            {
+                "fallback": "New list \"User Stories\" added to board \"<https:\/\/trello.com\/b\/gSTRbPFh|Project Application>\"",
+                "text": "New list \"User Stories\" added to board \"<https:\/\/trello.com\/b\/gSTRbPFh|Project Application>\"",
+                "id": 1,
+                "color": "8daec2"
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1458257075.000009"
+    },
+    {
+        "text": "",
+        "bot_id": "B0THPV16H",
+        "attachments": [
+            {
+                "fallback": "[sept-weather] New branch \"<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/damon|damon>\" was pushed by DamonToumbourou",
+                "text": "[sept-weather] New branch \"<https:\/\/github.com\/OG-SEPT\/sept-weather\/tree\/damon|damon>\" was pushed by DamonToumbourou",
+                "id": 1,
+                "color": "4183C4",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1458262970.429146"
+    }
+]

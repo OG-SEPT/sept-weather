@@ -1,0 +1,80 @@
+[
+    {
+        "user_id": "U0RV0TVFV",
+        "user_name": "damon",
+        "date": "1459915464",
+        "change_type": "added",
+        "app_type": "Lucidchart",
+        "app_id": "A0G8S1LSC",
+        "scope": "identify,commands,channels:read,users:read,chat:write:bot"
+    },
+    {
+        "user_id": "U0S10RU0M",
+        "user_name": "benji",
+        "date": "1458257067",
+        "change_type": "updated",
+        "service_id": "27601987221",
+        "service_type": "GitHub",
+        "scope": "incoming-webhook",
+        "channel": "C0TJFPXFC"
+    },
+    {
+        "user_id": "U0SGR4XNZ",
+        "user_name": "alexcheong",
+        "date": "1458256876",
+        "change_type": "updated",
+        "service_id": "27616842663",
+        "service_type": "Trello",
+        "scope": "incoming-webhook",
+        "channel": "C0TJFPXFC"
+    },
+    {
+        "user_id": "U0SGR4XNZ",
+        "user_name": "alexcheong",
+        "date": "1458256630",
+        "change_type": "added",
+        "service_id": "27616842663",
+        "service_type": "Trello",
+        "scope": "incoming-webhook",
+        "channel": "C0TJFPXFC"
+    },
+    {
+        "user_id": "U0S10RU0M",
+        "user_name": "benji",
+        "date": "1458252630",
+        "change_type": "updated",
+        "service_id": "27601987221",
+        "service_type": "GitHub",
+        "scope": "incoming-webhook",
+        "channel": "C0RV3AUDR"
+    },
+    {
+        "user_id": "U0S10RU0M",
+        "user_name": "benji",
+        "date": "1458252616",
+        "change_type": "updated",
+        "service_id": "27601987221",
+        "service_type": "GitHub",
+        "scope": "incoming-webhook",
+        "channel": "C0RV3AUDR"
+    },
+    {
+        "user_id": "U0S10RU0M",
+        "user_name": "benji",
+        "date": "1458252405",
+        "change_type": "added",
+        "service_id": "27601987221",
+        "service_type": "GitHub",
+        "scope": "incoming-webhook",
+        "channel": "C0RV3AUDR"
+    },
+    {
+        "user_id": 0,
+        "user_name": "slack",
+        "date": "1457648221",
+        "change_type": "added",
+        "service_id": "26034644711",
+        "service_type": "Google Drive",
+        "scope": "files:write:user"
+    }
+]
