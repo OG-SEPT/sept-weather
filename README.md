@@ -1,6 +1,6 @@
 
 -------------------------------------------------------------------------
-          					SEPT WEATHER
+          	             SEPT WEATHER
 -------------------------------------------------------------------------
 
 A weather service web application built using the python Flask framework.
@@ -32,8 +32,8 @@ and debugger. It includes Jinja2 for templating we took advantage of.
 
 FRONT-END:
 ----------
-We used Javascript for the front and made use of AJAX many times on our
-pages. 
+We used Javascript for the front-end.
+Our application features AJAX for serving dynamic content on our pages. 
 
 BACKEND:
 --------
@@ -46,11 +46,52 @@ DATABASE:
 We used sqlite3 which is built in to python and flask includes some helpful
 functions for dealing with databases.
 
+SCRAPING THE DATA:
+------------------
+We used the Python modules Beautiful Soup and requests to scrape the html 
+from the BOM. 
+
+API:
+----
+Our site can be used as an API for other programmers. By sending a 
+string to our site contining the url of the weather station you wish 
+to view our application will return the data in JSON format.
+
 --------------------------------------------------------------------------
 REQUIREMENTS: the Python modules required to run our program
 --------------------------------------------------------------------------
+Note: the requirements are found in the requirements.txt file
+-----
 Flask==0.10.1
 requests=2.9.1
 bs4=4.4.1
 re=2.2.1
 json=2.0.9
+
+--------------------------------------------------------------------------
+INSTALATION:
+--------------------------------------------------------------------------
+Note: the /project-page/HOWTO.txt file contains instructions on installing
+----- and running the application
+
+--------------------------------------------------------------------------
+TESTING:
+--------------------------------------------------------------------------
+Unit Testing:
+-------------
+Our Application includes a Test file: sept-test.py 
+This file runs a number of unit tests that call our api urls and functions
+and check the return data is as expected.
+
+To run the tests file:
+    python sept-test.py
+    
+
+System Level Test Cases:
+----------------------- 
+We have also demonstated a number of system level test cases the results 
+are stored in /project-page/system-tests.pdf
+ 
+--------------------------------------------------------------------------
+END OF README
+--------------------------------------------------------------------------
