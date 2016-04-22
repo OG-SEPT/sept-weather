@@ -48,11 +48,18 @@ function addFavorite(url, name){
         }
     });
 }
+// Chart Arrays
+var min = [];
+var max = [];
+var am = [];
+var pm = [];
 
 // loads the station weather data
 function getStationData(url){
+    
     $.ajax({
         type: 'GET',
+        async: true,
         url: 'stations_info',
         data: url,
         dataType: 'json',
@@ -73,11 +80,13 @@ function getStationData(url){
                 
                 var td = document.createElement('td');
                 td.textContent = value.minT;            // MIN
-                items.appendChild(td);  
+                items.appendChild(td);
+                min.push(value.minT);  
                 
                 var td = document.createElement('td');
                 td.textContent = value.maxT;            // MAX
-                items.appendChild(td);  
+                items.appendChild(td);
+                max.push(value.maxT);  
                 
                 var td = document.createElement('td');
                 td.textContent = value.rain;
@@ -104,8 +113,9 @@ function getStationData(url){
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
-                td.textContent = value.temp9;
-                items.appendChild(td);  
+                td.textContent = value.temp9;            // 9AM
+                items.appendChild(td);
+                am.push(value.temp9);
                 
                 var td = document.createElement('td');
                 td.textContent = value.rh9;
@@ -128,8 +138,9 @@ function getStationData(url){
                 items.appendChild(td);  
                 
                 var td = document.createElement('td');
-                td.textContent = value.temp3;
-                items.appendChild(td);  
+                td.textContent = value.temp3;            // 3PM
+                items.appendChild(td);
+                pm.push(value.temp3);  
                 
                 var td = document.createElement('td');
                 td.textContent = value.rh3;
@@ -152,42 +163,51 @@ function getStationData(url){
                 items.appendChild(td);  
                          
                 var tr = document.createElement('tr');
-                items.appendChild(tr);
-
-
-            });   
-
+                items.appendChild(tr); 
+            }); 
         }
-            
-    });
+    }); 
 }
 
-
 function resetDatabase() {
-    
     $.ajax({
         type: 'GET',
         url: 'reset_database',
         success: function(result){
-            
             console.log("success");
         }
     });
-
-    
-// Chart 
-function openChart(url) {
-    
-    popupWindow = window.open(
-        url,'popUpWindow','height=650,width=1100,left=125,top=125')
 }
 
+   
+// Open window 
+function openChart(url) {
+    
+    console.log(min);
+    console.log(max); 
+    console.log(am); 
+    console.log(pm);
+    
+    popupWindow = window.open(
+        url,'popUpWindow','height=650,width=1100,left=125,top=125,resizable=0,titlebar=0,menubar=0,scrollbars=0');       
+}
 
+// Chart
 google.charts.load('current', {'packages':['line']});
-    google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
-
+    
+    var min = window.opener.min;
+    var max = window.opener.max;
+    var am = window.opener.am;
+    var pm = window.opener.pm;
+    
+//    min = parseFloat(min);
+//    max = parseFloat(max);
+//    am = parseFloat(am);
+//    pm = parseFloat();
+    
     var data = new google.visualization.DataTable();
     data.addColumn('number', 'Days');
     data.addColumn('number', 'Min');
@@ -195,30 +215,17 @@ function drawChart() {
     data.addColumn('number', '9am');
     data.addColumn('number', '3pm');
     
-
-    data.addRows([
-        [1,  37.8, 80.8, 41.8, 23],
-        [2,  30.9, 69.5, 32.4, 56],
-        [3,  25.4,   57, 25.7, 23],
-        [4,  11.7, 18.8, 10.5, 23],
-        [5,  11.9, 17.6, 10.4, 86],
-        [6,   8.8, 13.6,  7.7, 38],
-        [7,  11.9, 17.6, 10.4, 86],
-        [8,  11.9, 17.6, 10.4, 86],
-        [9,  11.9, 17.6, 10.4, 86],
-        [10,  11.9, 17.6, 10.4, 86],
-        [11,  11.9, 17.6, 10.4, 86],
-        [12,  11.9, 17.6, 10.4, 86],
-        [13,  11.9, 17.6, 10.4, 86],
-        [14,  11.9, 17.6, 10.4, 86],
-        [15,  11.9, 17.6, 10.4, 86],
-        [16,  11.9, 17.6, 10.4, 86],
-        [17,  11.9, 17.6, 10.4, 86],
-        [18,  11.9, 17.6, 10.4, 86],
-        [19,  11.9, 17.6, 10.4, 86],
-        [20,  11.9, 17.6, 10.4, 86]
-    ]);
-
+    console.log(min);
+    console.log(max); 
+    console.log(am); 
+    console.log(pm);
+    
+    for (var i = 0; i < 21; i++) {
+        data.addRows([
+            [ i, parseFloat(min[i]), parseFloat(max[i]), parseFloat(am[i]), parseFloat(pm[i]) ]
+        ]);
+    }
+    
     var options = {
         chart: {
             title: 'Weather Chart',
@@ -228,6 +235,8 @@ function drawChart() {
     };
 
     var chart = new google.charts.Line(document.getElementById('linechart_material'));
-
     chart.draw(data, options);
 }
+
+
+
