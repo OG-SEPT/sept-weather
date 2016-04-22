@@ -263,7 +263,7 @@ def get_station_data(url):
         cld3 = td[17].get_text()
         dir3 = td[18].get_text()
         spd3 = td[19].get_text()
-        mslp9 = ""
+        mslp3 = ""
         try: 
             mslp3 = td[20].get_text()
         except:
