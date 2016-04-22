@@ -9,6 +9,9 @@ from time import sleep
 
 app = Flask(__name__)
 
+#######################################################
+# Database handling below
+#######################################################
 
 # for database connection
 @app.before_request
@@ -24,7 +27,7 @@ def teardown_request(exception):
 
 
 ########################################################
-# page routes below
+# page routes handled below
 ########################################################
 
 @app.route('/')
@@ -80,10 +83,10 @@ def get_wa():
 
 @app.route('/act')
 def get_act():
-    url = "http://www.bom.gov.au/climate/dwo/IDCJDW0100.shtml"
-    stations_a_z = get_station_links_a_z(url) 
+    url = "climate/dwo/IDCJDW0100.shtml"
+    stations_links = get_station_links(url) 
     
-    return render_template('act.html', stations_a_z=stations_a_z)
+    return render_template('act.html', stations_links=stations_links)
 
 
 @app.route('/tasmania')
@@ -106,10 +109,7 @@ def get_nt():
 def get_antarctica():
     url = "climate/dwo/IDCJDW0920.shtml"
     stations_links = get_station_links(url) 
-    print "station links: " 
-    for link in stations_links:
-        print link
-
+    
     return render_template('antarctica.html', stations_links=stations_links)
 
 
@@ -126,7 +126,7 @@ def chart():
 	
 
 ##############################################################
-# all the routes for API below
+# Our API is handled below
 ##############################################################
 
 # called from the site to return sation locations as json. 
@@ -170,7 +170,7 @@ def reset_database():
 
 
 ##########################################################
-# utility functions for scraping data 
+# Utility functions for scraping data below
 ##########################################################
 
 # returns the links to pages that contain the stations,  A-C, D-E, ect

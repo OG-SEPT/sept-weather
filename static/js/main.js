@@ -1,9 +1,11 @@
-// loads the station names
+/* 
+ * this function loads the station names
+*/   
 function loadFunction(name) {
      
     $.ajax({
         type: 'GET',
-        url: "stations",
+        url: 'stations',
         data: name,
         dataType: 'json',
         success: function(result){
@@ -12,11 +14,17 @@ function loadFunction(name) {
 
             var add_favorite = document.getElementById('add_favorite');
             add_favorite.innerHTML = "";
+            
+            var inst = document.getElementById('inst');
+            inst.innerHTML = 'Select station name to view observation:';
+            var inst_1 = document.getElementById('inst_1');
+            inst_1.innerHTML = 'Add to your favorites with: +';
+
 
             $.each(result, function(index, value){
                 var button = document.createElement('input');
-                button.setAttribute("type", "button");
-                button.setAttribute("value", value.station_name);
+                button.setAttribute('type', 'button');
+                button.setAttribute('value', value.station_name);
                 button.addEventListener('click', function(){
                     getStationData(value.url);
                 });
