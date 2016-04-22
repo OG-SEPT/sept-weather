@@ -54,7 +54,7 @@ from the BOM.
 API:
 ----
 Our site can be used as an API for other programmers. By sending a 
-string to our site contining the url of the weather station you wish 
+string to our site containing the url of the weather station you wish 
 to view our application will return the data in JSON format.
 
 --------------------------------------------------------------------------
@@ -77,6 +77,7 @@ Note: the /project-page/HOWTO.txt file contains instructions on installing
 --------------------------------------------------------------------------
 TESTING:
 --------------------------------------------------------------------------
+
 Unit Testing:
 -------------
 Our Application includes a Test file: sept-test.py 
@@ -89,9 +90,10 @@ To run the tests file:
 
 System Level Test Cases:
 ----------------------- 
-We have also demonstated a number of system level test cases the results 
+We have also demonstrated a number of system level test cases the results 
 are stored in /project-page/system-tests.pdf
  
+
 --------------------------------------------------------------------------
 END OF README
 --------------------------------------------------------------------------
