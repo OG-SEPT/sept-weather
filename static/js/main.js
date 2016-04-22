@@ -227,7 +227,7 @@ function openChart(url) {
     console.log(pm);
     
     popupWindow = window.open(
-        url,'popUpWindow','height=650,width=1100,left=125,top=125,resizable=0,titlebar=0,menubar=0,scrollbars=0');       
+        url,'popUpWindow','height=700,width=1100,left=125,top=125,resizable=0,titlebar=0,menubar=0,scrollbars=0');       
     }
 
 // import the chart google API stuff
@@ -242,7 +242,7 @@ function drawChart() {
     var pm = window.opener.pm;
     
     var data = new google.visualization.DataTable();
-    data.addColumn('number', 'Days');
+    data.addColumn('number', 'Date');
     data.addColumn('number', 'Min');
     data.addColumn('number', 'Max');
     data.addColumn('number', '9am');
