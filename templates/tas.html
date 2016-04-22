@@ -1,23 +1,30 @@
+<!--TASMANIA PAGE-->
 {% extends "layout.html" %}
 {% block title %}TAS{% endblock %}
 
 {% block main_content %}
 
 <h2 class="sub-header">Weather Observations for Tasmania</h2>
-<div class="table-responsive">
-    <table class="table table-striped">
-        <thead>
-            <tr> 
-                {% for station in stations_a_z %}
-                <td><input type="button" value="{{ station.letter }}" onclick="loadFunction( '{{ station.url }}' )"; ></td>
-                {% endfor %}
-            </tr> 
-        </thead>
-        <tbody id="stations">
-            
-        </tbody>
-    </table>
+<h5>Select letters below to expand for station names:</h5>
 
+<div>
+    {% for station in stations_a_z %}
+        <input type="button" value="{{ station.letter }}" onclick="loadFunction( '{{ station.url }}' )" >
+    {% endfor %}
 </div>
+
+<hr>
+
+<h5 id="inst"></h5>
+<h5 id="inst_1"></h5>
+
+<div id="station">
+</div> 
+<div id="add_favorite">
+</div>
+
+<hr>
+
+{% include "table.html" %}
 
 {% endblock %}

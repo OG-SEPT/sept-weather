@@ -1,9 +1,11 @@
-// loads the station names
+/* 
+ * this function loads the station names
+*/   
 function loadFunction(name) {
      
     $.ajax({
         type: 'GET',
-        url: "stations",
+        url: 'stations',
         data: name,
         dataType: 'json',
         success: function(result){
@@ -12,11 +14,17 @@ function loadFunction(name) {
 
             var add_favorite = document.getElementById('add_favorite');
             add_favorite.innerHTML = "";
+            
+            var inst = document.getElementById('inst');
+            inst.innerHTML = 'Select station name to view observation:';
+            var inst_1 = document.getElementById('inst_1');
+            inst_1.innerHTML = 'Add to your favorites with: +';
+
 
             $.each(result, function(index, value){
                 var button = document.createElement('input');
-                button.setAttribute("type", "button");
-                button.setAttribute("value", value.station_name);
+                button.setAttribute('type', 'button');
+                button.setAttribute('value', value.station_name);
                 button.addEventListener('click', function(){
                     getStationData(value.url);
                 });
@@ -67,97 +75,119 @@ function getStationData(url){
             items.innerHTML = "";
             
             $.each(result, function(index, value){
-                var td = document.createElement('td');
+                //Date
+                var td = document.createElement('td')
+                td.style.backgroundColor = '#f2f2f2';
                 td.textContent = value.date; 
                 items.appendChild(td);
-                
+                //Day
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#ffffff';
                 td.textContent = value.day;
-                items.appendChild(td);  
-                
+                items.appendChild(td);   
+                //min c
                 var td = document.createElement('td');
                 td.textContent = value.minT;            // MIN
+                td.style.backgroundColor = '#f2f2f2'
                 items.appendChild(td);  
-                
+                //max c
                 var td = document.createElement('td');
                 td.textContent = value.maxT;            // MAX
+                td.style.backgroundColor = '#ffffff'
                 items.appendChild(td);  
-                
+                //rain mm
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#f2f2f2'
                 td.textContent = value.rain;
                 items.appendChild(td);  
-                
+                //evap
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#ffffff'
                 td.textContent = value.evap;
                 items.appendChild(td);  
-                
+                //sun
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#f2f2f2'
                 td.textContent = value.sun;
                 items.appendChild(td);  
-                
+                //wind: dir
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#ffffff'
                 td.textContent = value.dirW;
                 items.appendChild(td);  
-                
+                //wind spd
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#f2f2f2'
                 td.textContent = value.spdW;
                 items.appendChild(td);  
-                
+                //wind: time
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#ffffff'
                 td.textContent = value.timeW;
                 items.appendChild(td);  
-                
+                //9am: temp
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#f2f2f2'
                 td.textContent = value.temp9;
                 items.appendChild(td);  
-                
+                //9am: RH
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#ffffff'
                 td.textContent = value.rh9;
                 items.appendChild(td);  
-                
+                //9am: Cld
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#f2f2f2'
                 td.textContent = value.cld9;
                 items.appendChild(td);  
-                
+                //9am: Dir
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#ffffff'
                 td.textContent = value.dir9;
                 items.appendChild(td);  
-                
+                //9am: Spd
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#f2f2f2'
                 td.textContent = value.spd9;
                 items.appendChild(td);  
-                
+                //9am: MSLP
                 var td = document.createElement('td');
+                td.style.backgroundColor = '#ffffff'
+                td.textContent = value.mslp9;
+                items.appendChild(td);  
+                //3pm: Temp
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#f2f2f2'
+                td.textContent = value.temp3;
+                items.appendChild(td);  
+                //3pm: RH
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#ffffff'
+                td.textContent = value.rh3;
+                items.appendChild(td);  
+                //3pm: Cld
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#f2f2f2'
+                td.textContent = value.cld3;
+                items.appendChild(td);  
+                //3pm: D
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#ffffff'
+                td.textContent = value.dir3;
+                items.appendChild(td);  
+                //3pm: speed 
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#f2f2f2'
+                td.textContent = value.spd3;
+                items.appendChild(td);  
+                //3pm: mslp
+                var td = document.createElement('td');
+                td.style.backgroundColor = '#ffffff'
                 td.textContent = value.mslp9;
                 items.appendChild(td);  
                 
-                var td = document.createElement('td');
-                td.textContent = value.temp3;
-                items.appendChild(td);  
-                
-                var td = document.createElement('td');
-                td.textContent = value.rh3;
-                items.appendChild(td);  
-                
-                var td = document.createElement('td');
-                td.textContent = value.cld3;
-                items.appendChild(td);  
-                
-                var td = document.createElement('td');
-                td.textContent = value.dir3;
-                items.appendChild(td);
-                
-                var td = document.createElement('td');
-                td.textContent = value.spd3;
-                items.appendChild(td);    
-                
-                var td = document.createElement('td');
-                td.textContent = value.mslp3;
-                items.appendChild(td);  
-                         
                 var tr = document.createElement('tr');
                 items.appendChild(tr);
-
 
             });   
 
