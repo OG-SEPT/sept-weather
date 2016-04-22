@@ -1,0 +1,44 @@
+[
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "Our website is now accessible @ <http:\/\/sept-weather.ddns.net|sept-weather.ddns.net>",
+        "ts": "1457657745.000002"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "and you can log in via ssh and modify the files.",
+        "ts": "1457657759.000003"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "log in: ssh <mailto:sept@sept-weather.ddns.net|sept@sept-weather.ddns.net>",
+        "ts": "1457657785.000004"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "password: weather",
+        "ts": "1457657788.000005"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "files are located in: \/var\/www",
+        "ts": "1457657813.000006"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "when you log in cd ..  x 2 \/ then cd var \/ cd www",
+        "ts": "1457657836.000007"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "actually your login is: yourfirstname@yourlastname",
+        "ts": "1457662538.000008"
+    }
+]

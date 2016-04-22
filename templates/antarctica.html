@@ -1,22 +1,17 @@
-<!--NORTHERN TERRITORY PAGE-->
 {% extends "layout.html" %}
-{% block title %}NT{% endblock %}
+{% block title %}ANTARTICA{% endblock %}
 
 {% block main_content %}
 
-<h2 class="sub-header">Weather Observations for Northern Territory</h2>
-<h5>Select letters below to expand for station names:</h5>
+<h2 class="sub-header">Weather Observations for Antartica</h2>
 
 <div>
-    {% for station in stations_a_z %}
-        <input type="button" value="{{ station.letter }}" onclick="loadFunction( '{{ station.url }}' )" >
+    {% for station in stations_links %}
+        <input type="button" value="{{ station.station_name }}" onclick="getStationData( '{{ station.url }}' )" >
     {% endfor %}
 </div>
 
 <hr>
-
-<h5 id="inst"></h5>
-<h5 id="inst_1"></h5>
 
 <div id="station">
 </div> 
@@ -78,7 +73,7 @@
                 <th>hPa</th>
             </tr>
         </thead>
-        <tbody class="table table-bordered" id="station_data">
+        <tbody id="station_data">
             <tr>
                 <th></th>
             </tr>

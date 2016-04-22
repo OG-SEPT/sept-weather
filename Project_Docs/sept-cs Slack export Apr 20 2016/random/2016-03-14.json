@@ -1,0 +1,9 @@
+[
+    {
+        "user": "U0SGR4XNZ",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0SGR4XNZ|alexcheong> has joined the channel",
+        "ts": "1457949835.000002"
+    }
+]

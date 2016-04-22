@@ -200,3 +200,83 @@ Traceback (most recent call last):
     -
     ^
 SyntaxError: invalid syntax
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 911-165-418
+127.0.0.1 - - [22/Apr/2016 14:31:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:35] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:35] "GET /static/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:35] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:35] "GET /static/css/dashboard.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:36] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:36] "GET /static/images/NSW.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:36] "GET /static/images/VIC.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:36] "GET /static/images/QLD.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:36] "GET /static/images/ACT.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:36] "GET /static/images/WA.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:36] "GET /static/images/TAS.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:36] "GET /static/images/NT.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:36] "GET /static/images/SA.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:36] "GET /static/images/antarctica.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:36] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [22/Apr/2016 14:31:39] "GET /victoria HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:40] "GET /favorite HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:44] "GET /stations_info?/climate/dwo/IDCJDW3001.latest.shtml HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:47] "GET /stations_info?/climate/dwo/IDCJDW3001.latest.shtml HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:47] "GET /reset_database HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:50] "GET /queensland HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:52] "GET /new_south_wales HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:54] "GET /victoria HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:31:57] "GET /stations?climate/dwo/IDCJDW0301.shtml HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:32:01] "GET /stations_info?/climate/dwo/IDCJDW3001.latest.shtml HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:32:20] "GET /victoria HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:32:20] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2016 14:32:20] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2016 14:32:20] "GET /static/css/dashboard.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2016 14:32:20] "GET /static/images/logo.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2016 14:32:21] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2016 14:32:21] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:43:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:43:44] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:43:44] "GET /static/css/dashboard.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2016 14:43:44] "GET /static/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:43:45] "GET /static/images/WA.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:43:45] "GET /static/images/NT.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:43:45] "GET /static/images/SA.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:43:46] "GET /static/images/ACT.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:43:46] "GET /static/images/antarctica.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:43:46] "GET /static/images/QLD.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:43:46] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:43:46] "GET /static/images/TAS.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2016 14:43:46] "GET /static/images/logo.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2016 14:43:47] "GET /static/images/NSW.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2016 14:43:47] "GET /static/images/VIC.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2016 14:43:47] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [22/Apr/2016 14:43:52] "GET /victoria HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:43:52] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2016 14:43:57] "GET /stations?climate/dwo/IDCJDW0301.shtml HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:44:06] "GET /stations_info?/climate/dwo/IDCJDW3009.latest.shtml HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 14:50:28] "]” / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1812, in wsgi_app
+    ctx = self.request_context(environ)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1773, in request_context
+    return RequestContext(self, environ)
+  File "/usr/local/lib/python2.7/dist-packages/flask/ctx.py", line 224, in __init__
+    self.url_adapter = app.create_url_adapter(self.request)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1602, in create_url_adapter
+    server_name=self.config['SERVER_NAME'])
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/routing.py", line 1323, in bind_to_environ
+    query_args=query_args)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/routing.py", line 1237, in bind
+    url_scheme, path_info, default_method, query_args)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/routing.py", line 1363, in __init__
+    self.default_method = to_unicode(default_method)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/_compat.py", line 206, in to_unicode
+    return x.decode(charset, errors)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x94 in position 1: ordinal not in range(128)
+127.0.0.1 - - [22/Apr/2016 14:57:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2016 15:18:38] "GET /northern_territory HTTP/1.1" 200 -

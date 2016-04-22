@@ -1,0 +1,45 @@
+[
+    {
+        "user": "U0SGR4XNZ",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0SGR4XNZ|alexcheong> has joined the channel",
+        "ts": "1458131899.000002"
+    },
+    {
+        "user": "U0SGR4XNZ",
+        "purpose": "gossip about alex",
+        "type": "message",
+        "subtype": "channel_purpose",
+        "text": "<@U0SGR4XNZ|alexcheong> set the channel purpose: gossip about alex",
+        "ts": "1458131900.000003"
+    },
+    {
+        "user": "U0S10RU0M",
+        "inviter": "U0SGR4XNZ",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0S10RU0M|benji> has joined the channel",
+        "ts": "1458131900.000004"
+    },
+    {
+        "user": "U0S17S3K3",
+        "inviter": "U0SGR4XNZ",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0S17S3K3|doeun> has joined the channel",
+        "ts": "1458131900.000005"
+    },
+    {
+        "user": "U0SGR4XNZ",
+        "members": [
+            "U0S10RU0M",
+            "U0S17S3K3",
+            "U0SGR4XNZ"
+        ],
+        "type": "message",
+        "subtype": "channel_archive",
+        "text": "<@U0SGR4XNZ|alexcheong> archived the channel (w\/ 3 members)",
+        "ts": "1458132742.000006"
+    }
+]

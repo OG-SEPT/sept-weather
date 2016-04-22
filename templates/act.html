@@ -1,23 +1,26 @@
+<!--ACT PAGE-->
 {% extends "layout.html" %}
 {% block title %}ACT{% endblock %}
 
 {% block main_content %}
 
-<h2 class="sub-header">Weather Observations for ACT</h2>
-<div class="table-responsive">
-    <table class="table table-striped">
-        <thead>
-            <tr> 
-                {% for station in stations_a_z %}
-                <td><input type="button" value="{{ station.letter }}" onclick="loadFunction( '{{ station.url }}' )"; ></td>
-                {% endfor %}
-            </tr> 
-        </thead>
-        <tbody id="stations">
-            
-        </tbody>
-    </table>
+<h2 class="sub-header">Weather Observations for Australian Capital Territory</h2>
 
+<div>
+    {% for station in stations_links %}
+        <input type="button" value="{{ station.station_name }}" onclick="getStationData( '{{ station.url }}' )" >
+    {% endfor %}
 </div>
+
+<hr>
+
+<div id="station">
+</div> 
+<div id="add_favorite">
+</div>
+
+<hr>
+
+{% include "table.html" %}
 
 {% endblock %}

@@ -1,0 +1,83 @@
+[
+    {
+        "user": "U0S17S3K3",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0S17S3K3|doeun> has joined the channel",
+        "ts": "1458131941.000002"
+    },
+    {
+        "user": "U0S10RU0M",
+        "inviter": "U0S17S3K3",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0S10RU0M|benji> has joined the channel",
+        "ts": "1458131942.000003"
+    },
+    {
+        "user": "U0SGR4XNZ",
+        "inviter": "U0S17S3K3",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0SGR4XNZ|alexcheong> has joined the channel",
+        "ts": "1458131942.000004"
+    },
+    {
+        "type": "message",
+        "user": "U0SGR4XNZ",
+        "text": "hi",
+        "ts": "1458131949.000005"
+    },
+    {
+        "user": "U0S17S3K3",
+        "members": [
+            "U0S10RU0M",
+            "U0S17S3K3",
+            "U0SGR4XNZ"
+        ],
+        "type": "message",
+        "subtype": "channel_archive",
+        "text": "<@U0S17S3K3|doeun> archived the channel (w\/ 3 members)",
+        "ts": "1458132664.000006"
+    },
+    {
+        "user": "U0S17S3K3",
+        "type": "message",
+        "subtype": "channel_unarchive",
+        "text": "<@U0S17S3K3|doeun> un-archived the channel",
+        "ts": "1458132676.000007"
+    },
+    {
+        "user": "U0S17S3K3",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0S17S3K3|doeun> has joined the channel",
+        "ts": "1458132677.000008"
+    },
+    {
+        "user": "U0S10RU0M",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0S10RU0M|benji> has joined the channel",
+        "ts": "1458132678.000009"
+    },
+    {
+        "user": "U0SGR4XNZ",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0SGR4XNZ|alexcheong> has joined the channel",
+        "ts": "1458132678.000010"
+    },
+    {
+        "user": "U0S17S3K3",
+        "members": [
+            "U0S10RU0M",
+            "U0S17S3K3",
+            "U0SGR4XNZ"
+        ],
+        "type": "message",
+        "subtype": "channel_archive",
+        "text": "<@U0S17S3K3|doeun> archived the channel (w\/ 3 members)",
+        "ts": "1458132712.000011"
+    }
+]
