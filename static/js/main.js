@@ -96,7 +96,8 @@ function getStationData(url){
                 var td = document.createElement('td');
                 td.textContent = value.minT;            // MIN
                 td.style.backgroundColor = '#f2f2f2'
-                items.appendChild(td);  
+                items.appendChild(td);
+                min.push(value.minT);    
                 //max c
                 var td = document.createElement('td');
                 td.textContent = value.maxT;            // MAX
