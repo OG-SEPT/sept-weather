@@ -333,7 +333,7 @@ def callForecastApi(coordinates):
     # stores list of lists of forecast data
     forecast_daily = []
     
-    for row in range(7)):
+    for row in range(7):
         # assigning relevant values to variables
         time = json_data['daily']['data'][row]['time']
         summary = json_data['daily']['data'][row]['summary']
