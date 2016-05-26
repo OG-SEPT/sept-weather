@@ -1,6 +1,7 @@
 /* 
  * this function loads the station names
 */   
+
 function loadFunction(name) {
      
     $.ajax({
@@ -26,7 +27,10 @@ function loadFunction(name) {
                 button.setAttribute('type', 'button');
                 button.setAttribute('value', value.station_name);
                 button.addEventListener('click', function(){
+                          
+//                    getForcast(value.station_name); 
                     getStationData(value.url);
+                    
                 });
                 station_data.appendChild(button);
                 
@@ -43,6 +47,22 @@ function loadFunction(name) {
     });
 }
 
+// forecast.io call
+function getForcast(location){
+    
+    var button = document.createElement('input');
+    button.setAttribute('type', 'button');
+    button.setAttribute('value', location);
+    button.addEventListener('click', function(){
+              
+        // this is where u calll the geopy module
+//        $.ajax()
+        
+    });
+
+    
+    
+} 
 
 // adds a station to favorite 
 // display graph here
@@ -96,13 +116,8 @@ function getStationData(url){
                 var td = document.createElement('td');
                 td.textContent = value.minT;            // MIN
                 td.style.backgroundColor = '#f2f2f2'
-<<<<<<< HEAD
-                items.appendChild(td);
-                min.push(value.minT);    
-=======
                 items.appendChild(td); 
                 min.push(value.minT); 
->>>>>>> 0caeffcd7cf21786f2ee041f1fb10b551451626a
                 //max c
                 var td = document.createElement('td');
                 td.textContent = value.maxT;            // MAX
@@ -254,10 +269,9 @@ function drawChart() {
     data.addColumn('number', '9am');
     data.addColumn('number', '3pm');
     
-    for (var i = 0; i < 30; i++) {
-        var j = i + 1;
+    for (var i = 1; i < 30; i++) {
         data.addRows([
-            [ j, parseFloat(min[i]), parseFloat(max[i]), parseFloat(am[i]), parseFloat(pm[i]) ]
+            [ i, parseFloat(min[i-1]), parseFloat(max[i-1]), parseFloat(am[i-1]), parseFloat(pm[i-1]) ]
         ]);
     }
     

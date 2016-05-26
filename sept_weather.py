@@ -6,6 +6,8 @@ import re
 import json
 import sqlite3
 from time import sleep
+from geopy.geocoders import Nominatim
+import urllib2
 
 app = Flask(__name__)
 
@@ -169,6 +171,17 @@ def reset_database():
     return "Successful Reset"
 
 
+# adds a station to favorite
+@app.route('/forecast', methods=['GET'])
+def get_forecast():
+    name = request.args.get('name')
+    
+    location = getCoordinates(name)
+    print "name: "+ name
+    print "locataion: "+location
+    return location
+    
+
 ##########################################################
 # Utility functions for scraping data below
 ##########################################################
@@ -296,7 +309,66 @@ def get_station_data(url):
         scraped.append(item)
         
     return scraped
+    
+    
+# geopy module
+def getCoordinates(location):
+    geolocator = Nominatim()
+    geoLocation = geolocator.geocode(location)
+    
+    coordinates = [geoLocation.latitude, geoLocation.longitude]
+    
+    return coordinates
+    
+def callForecastApi(coordinates):
+    # call the api url
+    forcastKey = "29ada930e694bf8f1b277802c4dc5b82"
+    url = "https://api.forecast.io/forecast/"+forcastKey+"/"+str(coordinates[0])+","+str(coordinates[1])
+    response = urllib2.urlopen(url)
+    
+    # store the json data
+    json = response.read()
+    json_data = json.loads(json)
+    
+    # stores list of lists of forecast data
+    forecast_daily = []
+    
+    for row in range(7)):
+        # assigning relevant values to variables
+        time = json_data['daily']['data'][row]['time']
+        summary = json_data['daily']['data'][row]['summary']
+        icon = json_data['daily']['data'][row]['icon']
+        sunriseTime = json_data['daily']['data'][row]['sunriseTime']
+        sunsetTime = json_data['daily']['data'][row]['sunsetTime']
+        moonPhase = json_data['daily']['data'][row]['moonPhase']
+        preciIntensity = json_data['daily']['data'][row]['preciIntensity']
+        preciIntensityMax = json_data['daily']['data'][row]['preciIntensityMax']
+        preciIntensityMaxTime = json_data['daily']['data'][row]['preciIntensityMaxTime']
+        preciProbability = json_data['daily']['data'][row]['preciProbability']
+        precipType = json_data['daily']['data'][row]['precipType']
+        temperatureMin = json_data['daily']['data'][row]['temperatureMin']
+        temperatureMinTime = json_data['daily']['data'][row]['temperatureMinTime']
+        temperatureMax = json_data['daily']['data'][row]['temperatureMax']
+        temperatureMaxTime = json_data['daily']['data'][row]['temperatureMaxTime']
+        apparentTemperatureMin = json_data['daily']['data'][row]['apparentTemperatureMin']
+        apparentTemperatureMinTime = json_data['daily']['data'][row]['apparentTemperatureMinTime']
+        apparentTemperatureMax = json_data['daily']['data'][row]['apparentTemperatureMax']
+        apparentTemperatureMaxTime = json_data['daily']['data'][row]['apparentTemperatureMaxTime']
+        dewPoint = json_data['daily']['data'][row]['dewPoint']
+        humidity = json_data['daily']['data'][row]['humidity']
+        windSpeed = json_data['daily']['data'][row]['windSpeed']
+        windBearing = json_data['daily']['data'][row]['windBearing']
+        cloudCover = json_data['daily']['data'][row]['cloudCover']
+        pressure = json_data['daily']['data'][row]['pressure']
+        ozone = json_data['daily']['data'][row]['ozone']
+        
+        forecast_daily.append(time, summary, icon, sunriseTime, sunsetTime, moonPhase, preciIntensity, preciIntensityMax, preciIntensityMaxTime, preciProbability, precipType, temperatureMin, temperatureMax, apparentTemperatureMin, apparentTemperatureMinTime, apparentTemperatureMax, apparentTemperatureMaxTime, dewPoint, humidity, windSpeed, windBearing, cloudCover, pressure, ozone)
 
+    return forecast_daily
+
+#ownKey = "5c34314ddb1be6e455c7de090a947858";  
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
+    
+
