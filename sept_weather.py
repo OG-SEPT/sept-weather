@@ -314,7 +314,7 @@ def get_station_data(url):
 # geopy module
 def getCoordinates(location):
     geolocator = Nominatim()
-    geoLocation = geolocator.geocode(location)
+    geoLocation = geolocator.geocode(location + " Australia")
     
     coordinates = [geoLocation.latitude, geoLocation.longitude]
     print "!!!!!!!"
@@ -322,8 +322,13 @@ def getCoordinates(location):
     
 
     return coordinates
+<<<<<<< HEAD
    
 
+=======
+    
+    
+>>>>>>> b8d23d4ebd2199e4e6d83ccbdebf58879509a504
 def callForecastApi(coordinates):
     # call the api url
     forcastKey = "29ada930e694bf8f1b277802c4dc5b82"
@@ -331,12 +336,12 @@ def callForecastApi(coordinates):
     response = urllib2.urlopen(url)
     
     # store the json data
-    json = response.read()
-    json_data = json.loads(json)
+    json_data = json.loads(response.read())
     
     # stores list of lists of forecast data
     forecast_daily = []
     
+   
     for row in range(7):
         # assigning relevant values to variables
         time = json_data['daily']['data'][row]['time']
@@ -345,19 +350,23 @@ def callForecastApi(coordinates):
         sunriseTime = json_data['daily']['data'][row]['sunriseTime']
         sunsetTime = json_data['daily']['data'][row]['sunsetTime']
         moonPhase = json_data['daily']['data'][row]['moonPhase']
-        preciIntensity = json_data['daily']['data'][row]['preciIntensity']
-        preciIntensityMax = json_data['daily']['data'][row]['preciIntensityMax']
-        preciIntensityMaxTime = json_data['daily']['data'][row]['preciIntensityMaxTime']
-        preciProbability = json_data['daily']['data'][row]['preciProbability']
+        
+        precipIntensity = json_data['daily']['data'][row]['precipIntensity']
+        precipIntensityMax = json_data['daily']['data'][row]['precipIntensityMax']
+        precipIntensityMaxTime = json_data['daily']['data'][row]['precipIntensityMaxTime']
+        precipProbability = json_data['daily']['data'][row]['precipProbability']
         precipType = json_data['daily']['data'][row]['precipType']
+        
         temperatureMin = json_data['daily']['data'][row]['temperatureMin']
         temperatureMinTime = json_data['daily']['data'][row]['temperatureMinTime']
         temperatureMax = json_data['daily']['data'][row]['temperatureMax']
         temperatureMaxTime = json_data['daily']['data'][row]['temperatureMaxTime']
+        
         apparentTemperatureMin = json_data['daily']['data'][row]['apparentTemperatureMin']
         apparentTemperatureMinTime = json_data['daily']['data'][row]['apparentTemperatureMinTime']
         apparentTemperatureMax = json_data['daily']['data'][row]['apparentTemperatureMax']
         apparentTemperatureMaxTime = json_data['daily']['data'][row]['apparentTemperatureMaxTime']
+        
         dewPoint = json_data['daily']['data'][row]['dewPoint']
         humidity = json_data['daily']['data'][row]['humidity']
         windSpeed = json_data['daily']['data'][row]['windSpeed']
@@ -366,9 +375,19 @@ def callForecastApi(coordinates):
         pressure = json_data['daily']['data'][row]['pressure']
         ozone = json_data['daily']['data'][row]['ozone']
         
-        forecast_daily.append(time, summary, icon, sunriseTime, sunsetTime, moonPhase, preciIntensity, preciIntensityMax, preciIntensityMaxTime, preciProbability, precipType, temperatureMin, temperatureMax, apparentTemperatureMin, apparentTemperatureMinTime, apparentTemperatureMax, apparentTemperatureMaxTime, dewPoint, humidity, windSpeed, windBearing, cloudCover, pressure, ozone)
+        forecast_daily.append([time, summary, icon, sunriseTime, sunsetTime, moonPhase, precipIntensity, precipIntensityMax, precipIntensityMaxTime, precipProbability, precipType, temperatureMin, temperatureMax, apparentTemperatureMin, apparentTemperatureMinTime, apparentTemperatureMax, apparentTemperatureMaxTime, dewPoint, humidity, windSpeed, windBearing, cloudCover, pressure, ozone])
+
+    print type(forecast_daily)
+    print forecast_daily[0]
+    print "hello"
 
     return forecast_daily
+
+
+#test1 = getCoordinates("Bundoora")
+#print test1
+#test2 = callForecastApi(test1)
+#print test2
 
 #ownKey = "5c34314ddb1be6e455c7de090a947858";  
 
