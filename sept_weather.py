@@ -135,7 +135,7 @@ def chart():
 @app.route('/stations', methods=['GET'])
 def get_stations():
     url = request.query_string
-    
+    print getCoordinates("bentleigh"); 
     links = get_station_links(url)
     
     return json.dumps(links)
@@ -171,7 +171,7 @@ def reset_database():
     return "Successful Reset"
 
 
-# adds a station to favorite
+# forecast
 @app.route('/forecast', methods=['GET'])
 def get_forecast():
     name = request.args.get('name')
@@ -317,9 +317,13 @@ def getCoordinates(location):
     geoLocation = geolocator.geocode(location)
     
     coordinates = [geoLocation.latitude, geoLocation.longitude]
+    print "!!!!!!!"
+    print corordinates
     
+
     return coordinates
-    
+   
+
 def callForecastApi(coordinates):
     # call the api url
     forcastKey = "29ada930e694bf8f1b277802c4dc5b82"

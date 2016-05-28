@@ -28,7 +28,7 @@ function loadFunction(name) {
                 button.setAttribute('value', value.station_name);
                 button.addEventListener('click', function(){
                           
-//                    getForcast(value.station_name); 
+                    getForecast(value.station_name); 
                     getStationData(value.url);
                     
                 });
@@ -48,13 +48,13 @@ function loadFunction(name) {
 }
 
 // forecast.io call
-function getForcast(location){
-    
+function getForecast(location){
+    console.log("hello");
     var button = document.createElement('input');
     button.setAttribute('type', 'button');
     button.setAttribute('value', location);
     button.addEventListener('click', function(){
-              
+    console.log("hello");      
         // this is where u calll the geopy module
 //        $.ajax()
         
