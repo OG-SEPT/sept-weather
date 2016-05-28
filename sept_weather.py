@@ -334,7 +334,7 @@ def callForecastApi(coordinates):
     forecast_daily = []
     
    
-    for row in range(7):
+    for row in range(8):
         # assigning relevant values to variables
         time = json_data['daily']['data'][row]['time']
         summary = json_data['daily']['data'][row]['summary']
@@ -345,9 +345,9 @@ def callForecastApi(coordinates):
         
         precipIntensity = json_data['daily']['data'][row]['precipIntensity']
         precipIntensityMax = json_data['daily']['data'][row]['precipIntensityMax']
-        precipIntensityMaxTime = json_data['daily']['data'][row]['precipIntensityMaxTime']
+        precipIntensityMaxTime = json_data['daily']['data'][1]['precipIntensityMaxTime'] #<-- bug here
         precipProbability = json_data['daily']['data'][row]['precipProbability']
-        precipType = json_data['daily']['data'][row]['precipType']
+        precipType = json_data['daily']['data'][1]['precipType'] #<-- and here
         
         temperatureMin = json_data['daily']['data'][row]['temperatureMin']
         temperatureMinTime = json_data['daily']['data'][row]['temperatureMinTime']
@@ -367,19 +367,15 @@ def callForecastApi(coordinates):
         pressure = json_data['daily']['data'][row]['pressure']
         ozone = json_data['daily']['data'][row]['ozone']
         
+
         forecast_daily.append([time, summary, icon, sunriseTime, sunsetTime, moonPhase, precipIntensity, precipIntensityMax, precipIntensityMaxTime, precipProbability, precipType, temperatureMin, temperatureMax, apparentTemperatureMin, apparentTemperatureMinTime, apparentTemperatureMax, apparentTemperatureMaxTime, dewPoint, humidity, windSpeed, windBearing, cloudCover, pressure, ozone])
-
-    print type(forecast_daily)
-    print forecast_daily[0]
-    print "hello"
-
+        
     return forecast_daily
 
-
-#test1 = getCoordinates("Bundoora")
-#print test1
-#test2 = callForecastApi(test1)
-#print test2
+test1 = getCoordinates("Bundoora")
+print test1
+test2 = callForecastApi(test1)
+print len(test2)
 
 #ownKey = "5c34314ddb1be6e455c7de090a947858";  
 
