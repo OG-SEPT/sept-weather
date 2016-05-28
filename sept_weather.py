@@ -352,6 +352,11 @@ def callForecastApi(coordinates):
         precipProbability = json_data['daily']['data'][row]['precipProbability']
         precipType = json_data['daily']['data'][1]['precipType'] #<-- and here
         
+        #bug - Not every daily forecast, has all the 'precipIntensityMaxTime' and 'precipType', 
+        # thats why it's an error!
+        #Solution -  we have to remove those values and probably remove other values we don't plan to use either whil we're at it!
+        
+        
         temperatureMin = json_data['daily']['data'][row]['temperatureMin']
         temperatureMinTime = json_data['daily']['data'][row]['temperatureMinTime']
         temperatureMax = json_data['daily']['data'][row]['temperatureMax']
