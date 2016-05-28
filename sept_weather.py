@@ -322,13 +322,8 @@ def getCoordinates(location):
     
 
     return coordinates
-<<<<<<< HEAD
-   
 
-=======
-    
-    
->>>>>>> b8d23d4ebd2199e4e6d83ccbdebf58879509a504
+
 def callForecastApi(coordinates):
     # call the api url
     forcastKey = "29ada930e694bf8f1b277802c4dc5b82"
