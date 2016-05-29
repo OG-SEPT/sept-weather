@@ -30,10 +30,11 @@ function loadFunction(name) {
                 button.setAttribute('value', value.station_name);
                 button.addEventListener('click', function(){
                     
-                          
-                    getForecast(value.station_name); 
                     // function call for displaying observation data 
-                    getStationData(value.url);
+                    //getStationData(value.url);
+                    // call display weather which gives you the option to view
+                    // forecast or past observations 
+                    displayWeather(value.url, value.station_name)
                     
                 });
                 station_data.appendChild(button);
