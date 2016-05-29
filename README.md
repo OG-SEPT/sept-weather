@@ -80,6 +80,7 @@ Note: the /project-page/HOWTO.txt file contains instructions on installing
 TESTING:
 --------------------------------------------------------------------------
 
+[![Build Status](https://travis-ci.org/DLLT/vacation-club.svg?branch=master)](https://travis-ci.org/DLLT/vacation-club)
 Unit Testing:
 -------------
 Our Application includes a Test file: sept_test.py 
