@@ -50,21 +50,6 @@ function loadFunction(name) {
     });
 }
 
-function removeElement(parentDiv, childDiv){
-     if (childDiv == parentDiv) {
-        alert("The parent div cannot be removed.");
-     }
-     else if (document.getElementById(childDiv)) {     
-        var child = document.getElementById(childDiv);
-        var parent = document.getElementById(parentDiv);
-        parent.removeChild(child);
-     }
-     else {
-        alert("Child div has already been removed or does not exist.");
-        return false;
-     }
-}
-
 // displays the options for viewing weather
 function displayWeather(url, station_name) {
     // display selected station to page
@@ -74,13 +59,27 @@ function displayWeather(url, station_name) {
     
     // display observation table button
 
-    var ob = document.getElementById('ob');
-    ob.setAttribute('type', 'button');
-    ob.setAttribute('value', 'obser');
-    ob.addEventListener('click', function(){
+    var observation = document.getElementById('displayObservation');
+    var observationButton = document.createElement('input');
+    observationButton.setAttribute('type', 'button');
+    observationButton.setAttribute('value', 'obser');
+    observationButton.addEventListener('click', function(){
        getStationData(url);
     });
-     
+    console.log(observation.childNodes.length); 
+    
+    if(observation.children.length <= 1) {
+        console.log("node less than 1");
+        console.log(observation.childNodes.length)
+        observation.appendChild(observationButton);
+    }
+
+    if(observation.children.length > 1) {
+        console.log("here");
+        console.log(observation.childNodes.length);
+        observation.innerHTML = '';
+        observation.appendChild(observationButton);
+    }
 }
     
     
