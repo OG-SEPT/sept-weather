@@ -50,14 +50,25 @@ function loadFunction(name) {
     });
 }
 
+function removeElement(parentDiv, childDiv){
+     if (childDiv == parentDiv) {
+        alert("The parent div cannot be removed.");
+     }
+     else if (document.getElementById(childDiv)) {     
+        var child = document.getElementById(childDiv);
+        var parent = document.getElementById(parentDiv);
+        parent.removeChild(child);
+     }
+     else {
+        alert("Child div has already been removed or does not exist.");
+        return false;
+     }
+}
+
 // displays the options for viewing weather
 function displayWeather(url, station_name) {
-    if(document.getElementById('Otable') != undefined){
-        console.log("test");
-        document.getElementById('Otable').removeChild();
-    }
-        
-    
+    removeElement('Otable', 'ot');
+ 
     // display selected station to page
     console.log("station name: " + station_name);
     var displayName = document.getElementById('displayName');
@@ -66,6 +77,7 @@ function displayWeather(url, station_name) {
     // display observation table button
     var otable = document.getElementById('OTable');
     var otable_button = document.createElement('input');
+    otable_button.setAttribute('id', 'ot')
     otable_button.setAttribute('type', 'button');
     otable_button.setAttribute('value', 'Observation Data');
     otable.appendChild(otable_button);
@@ -73,7 +85,7 @@ function displayWeather(url, station_name) {
         getStationData(url);
     })
     
-   
+
     
 
     
