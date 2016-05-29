@@ -165,16 +165,52 @@ function getForecastIO(name){
 } 
 
 
-/// forecast.io call
+// forecast.io call
 function getForecastOpen(name){
     $.ajax({
         type: 'GET',
         async: true,
-        url: 'forecast_io',
+        url: 'forecast_open',
         data: name,
         dataType: 'json',
         success: function(result){
-            console.log(result);
+
+            document.getElementById('stations_table').style.display = 'none';
+            document.getElementById('forecast_table').style.display = 'block';
+            
+            var items = document.getElementById('forecast_data'); 
+            items.innerHTML = "";
+
+            $.each(result, function(index, value){
+                // date
+                var date = document.createElement('td');
+                date.textContent = value[0];
+                items.appendChild(date);
+                
+                // desc weather
+                var desc = document.createElement('td');
+                desc.textContent = value[1];
+                items.appendChild(desc);
+
+                // temp Min
+                var tempMin = document.createElement('td');
+                console.log("tempMin:" + value[2]);
+                tempMin.textContent = value[2];
+                items.appendChild(tempMin);
+
+                /// temp Max
+                var tempMax = document.createElement('td');
+                tempMax.textContent = value[3];
+                items.appendChild(tempMax);
+
+                // humidity
+                var humidity = document.createElement('td');
+                humidity.textContent = value[4];
+                items.appendChild(humidity);
+                
+                var tableRow = document.createElement('tr');
+                items.appendChild(tableRow);
+            });
         }
     });
 } 
