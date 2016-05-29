@@ -61,7 +61,7 @@ function displayWeather(url, station_name) {
     var observation = document.getElementById('displayObservation');
     var observationButton = document.createElement('input');
     observationButton.setAttribute('type', 'button');
-    observationButton.setAttribute('value', 'Observation Data');
+    observationButton.setAttribute('value', 'Historical Data');
     observationButton.addEventListener('click', function(){
        getStationData(url);
     });
@@ -112,7 +112,9 @@ function displayWeather(url, station_name) {
     }
 
 }
-    
+// Forecast IO Chart
+FMin = []
+FMax = []    
     
 // forecast.io call
 function getForecastIO(name){
@@ -146,11 +148,13 @@ function getForecastIO(name){
                 console.log("tempMin:" + value[2]);
                 tempMin.textContent = value[2];
                 items.appendChild(tempMin);
+                FMin.push(tempMin)
 
                 /// temp Max
                 var tempMax = document.createElement('td');
                 tempMax.textContent = value[3];
                 items.appendChild(tempMax);
+                FMax.push(tempMax)
 
                 // humidity
                 var humidity = document.createElement('td');
