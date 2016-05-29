@@ -98,11 +98,15 @@ function displayWeather(url, station_name) {
     
 // forecast.io call
 function getForecast(location){
-    type: 'GET',
-    async: true,
-    url: '
-    $.ajax()
-        
+    $.ajax({
+        type: 'GET',
+        async: true,
+        url: 'stations_info',
+        data: url,
+        dataType: 'json',
+        success: function(result){
+            call function python
+        }
     });
     
 } 
