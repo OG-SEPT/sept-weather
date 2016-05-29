@@ -1,0 +1,62 @@
+[
+    {
+        "type": "message",
+        "subtype": "file_share",
+        "text": "<@U0SGR4XNZ|alexcheong> uploaded a file: <https:\/\/sept-cs.slack.com\/files\/alexcheong\/F13EBKVQC\/1vlli3a.png|What my family thinks I do>",
+        "file": {
+            "id": "F13EBKVQC",
+            "created": 1461593587,
+            "timestamp": 1461593587,
+            "name": "1vLLI3A.png",
+            "title": "What my family thinks I do",
+            "mimetype": "image\/png",
+            "filetype": "png",
+            "pretty_type": "PNG",
+            "user": "U0SGR4XNZ",
+            "editable": false,
+            "size": 48637,
+            "mode": "hosted",
+            "is_external": false,
+            "external_type": "",
+            "is_public": true,
+            "public_url_shared": false,
+            "display_as_bot": false,
+            "username": "",
+            "url_private": "https:\/\/files.slack.com\/files-pri\/T0S0TE9GE-F13EBKVQC\/1vlli3a.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "url_private_download": "https:\/\/files.slack.com\/files-pri\/T0S0TE9GE-F13EBKVQC\/download\/1vlli3a.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T0S0TE9GE-F13EBKVQC-815cab93ce\/1vlli3a_64.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T0S0TE9GE-F13EBKVQC-815cab93ce\/1vlli3a_80.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T0S0TE9GE-F13EBKVQC-815cab93ce\/1vlli3a_360.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_360_w": 360,
+            "thumb_360_h": 226,
+            "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T0S0TE9GE-F13EBKVQC-815cab93ce\/1vlli3a_480.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_480_w": 480,
+            "thumb_480_h": 301,
+            "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T0S0TE9GE-F13EBKVQC-815cab93ce\/1vlli3a_160.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T0S0TE9GE-F13EBKVQC-815cab93ce\/1vlli3a_720.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_720_w": 720,
+            "thumb_720_h": 452,
+            "image_exif_rotation": 1,
+            "original_w": 864,
+            "original_h": 542,
+            "permalink": "https:\/\/sept-cs.slack.com\/files\/alexcheong\/F13EBKVQC\/1vlli3a.png",
+            "permalink_public": "https:\/\/slack-files.com\/T0S0TE9GE-F13EBKVQC-e89cc12503",
+            "channels": [
+                "C0S14SWGY"
+            ],
+            "groups": [
+    
+            ],
+            "ims": [
+    
+            ],
+            "comments_count": 0
+        },
+        "user": "U0SGR4XNZ",
+        "upload": true,
+        "display_as_bot": false,
+        "username": "<@U0SGR4XNZ|alexcheong>",
+        "bot_id": null,
+        "ts": "1461593590.000002"
+    }
+]

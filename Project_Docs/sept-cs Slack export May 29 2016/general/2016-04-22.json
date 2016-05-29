@@ -1,0 +1,350 @@
+[
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "have you pushed yet?",
+        "ts": "1461310832.000032"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "Nah i havent",
+        "ts": "1461311170.000033"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "tryna format the chart better",
+        "ts": "1461311175.000034"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "lol but struggling again",
+        "ts": "1461311179.000035"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "i\u2019ll push what i ahve now then",
+        "ts": "1461311186.000036"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "did you see how i changed it?",
+        "ts": "1461311197.000037"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "ok",
+        "ts": "1461311202.000038"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "What changes are u referring to?",
+        "ts": "1461311345.000039"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "wanna skype man? lool",
+        "ts": "1461311362.000040"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "damon can you resubmit?",
+        "ts": "1461311868.000041"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "I can\u2019t figure out the formatting of the chart",
+        "ts": "1461311875.000042"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "it doesnt seem to be charting",
+        "ts": "1461312502.000043"
+    },
+    {
+        "type": "message",
+        "subtype": "file_share",
+        "text": "<@U0RV0TVFV|damon> uploaded a file: <https:\/\/sept-cs.slack.com\/files\/damon\/F12T1DP7U\/sept-weather.zip|sept-weather.zip> and commented: Assignment 1 submission FINAL!!!!!!!",
+        "file": {
+            "id": "F12T1DP7U",
+            "created": 1461314515,
+            "timestamp": 1461314515,
+            "name": "sept-weather.zip",
+            "title": "sept-weather.zip",
+            "mimetype": "application\/zip",
+            "filetype": "zip",
+            "pretty_type": "Zip",
+            "user": "U0RV0TVFV",
+            "editable": false,
+            "size": 29621402,
+            "mode": "hosted",
+            "is_external": false,
+            "external_type": "",
+            "is_public": true,
+            "public_url_shared": false,
+            "display_as_bot": false,
+            "username": "",
+            "url_private": "https:\/\/files.slack.com\/files-pri\/T0S0TE9GE-F12T1DP7U\/sept-weather.zip?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "url_private_download": "https:\/\/files.slack.com\/files-pri\/T0S0TE9GE-F12T1DP7U\/download\/sept-weather.zip?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "permalink": "https:\/\/sept-cs.slack.com\/files\/damon\/F12T1DP7U\/sept-weather.zip",
+            "permalink_public": "https:\/\/slack-files.com\/T0S0TE9GE-F12T1DP7U-77272e64ac",
+            "channels": [
+                "C0S10RUSZ"
+            ],
+            "groups": [
+    
+            ],
+            "ims": [
+    
+            ],
+            "comments_count": 1,
+            "initial_comment": {
+                "id": "Fc12SGHN30",
+                "created": 1461314515,
+                "timestamp": 1461314515,
+                "user": "U0RV0TVFV",
+                "is_intro": true,
+                "comment": "Assignment 1 submission FINAL!!!!!!!",
+                "channel": ""
+            }
+        },
+        "user": "U0RV0TVFV",
+        "upload": true,
+        "display_as_bot": false,
+        "username": "<@U0RV0TVFV|damon>",
+        "bot_id": null,
+        "ts": "1461314517.000044"
+    },
+    {
+        "type": "message",
+        "user": "U0S17S3K3",
+        "text": "i checked web site",
+        "ts": "1461314535.000045"
+    },
+    {
+        "type": "message",
+        "user": "U0S17S3K3",
+        "text": "thats so good",
+        "ts": "1461314538.000046"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "Good work Team. And well done Ben for sorting out the Chart problem. Honestly it seemed like a real toughy. Good Work!",
+        "ts": "1461314628.000047"
+    },
+    {
+        "type": "message",
+        "user": "U0S17S3K3",
+        "text": "you guys did so well.. sorry i didnt help a lot.. T^T",
+        "ts": "1461314672.000048"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "You actually did quite a lot. Don\u2019t Stress! Thank you Doeun.",
+        "ts": "1461314739.000049"
+    },
+    {
+        "type": "message",
+        "subtype": "file_share",
+        "text": "<@U0RV0TVFV|damon> uploaded a file: <https:\/\/sept-cs.slack.com\/files\/damon\/F12SR304X\/screen_shot_2016-04-22_at_6.46.36_pm.png|Screen Shot 2016-04-22 at 6.46.36 PM.png>",
+        "file": {
+            "id": "F12SR304X",
+            "created": 1461314830,
+            "timestamp": 1461314830,
+            "name": "Screen Shot 2016-04-22 at 6.46.36 PM.png",
+            "title": "Screen Shot 2016-04-22 at 6.46.36 PM.png",
+            "mimetype": "image\/png",
+            "filetype": "png",
+            "pretty_type": "PNG",
+            "user": "U0RV0TVFV",
+            "editable": false,
+            "size": 291399,
+            "mode": "hosted",
+            "is_external": false,
+            "external_type": "",
+            "is_public": true,
+            "public_url_shared": false,
+            "display_as_bot": false,
+            "username": "",
+            "url_private": "https:\/\/files.slack.com\/files-pri\/T0S0TE9GE-F12SR304X\/screen_shot_2016-04-22_at_6.46.36_pm.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "url_private_download": "https:\/\/files.slack.com\/files-pri\/T0S0TE9GE-F12SR304X\/download\/screen_shot_2016-04-22_at_6.46.36_pm.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T0S0TE9GE-F12SR304X-260c9e1cb9\/screen_shot_2016-04-22_at_6.46.36_pm_64.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T0S0TE9GE-F12SR304X-260c9e1cb9\/screen_shot_2016-04-22_at_6.46.36_pm_80.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T0S0TE9GE-F12SR304X-260c9e1cb9\/screen_shot_2016-04-22_at_6.46.36_pm_360.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_360_w": 360,
+            "thumb_360_h": 205,
+            "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T0S0TE9GE-F12SR304X-260c9e1cb9\/screen_shot_2016-04-22_at_6.46.36_pm_480.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_480_w": 480,
+            "thumb_480_h": 273,
+            "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T0S0TE9GE-F12SR304X-260c9e1cb9\/screen_shot_2016-04-22_at_6.46.36_pm_160.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T0S0TE9GE-F12SR304X-260c9e1cb9\/screen_shot_2016-04-22_at_6.46.36_pm_720.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_720_w": 720,
+            "thumb_720_h": 409,
+            "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T0S0TE9GE-F12SR304X-260c9e1cb9\/screen_shot_2016-04-22_at_6.46.36_pm_960.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_960_w": 960,
+            "thumb_960_h": 546,
+            "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T0S0TE9GE-F12SR304X-260c9e1cb9\/screen_shot_2016-04-22_at_6.46.36_pm_1024.png?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "thumb_1024_w": 1024,
+            "thumb_1024_h": 582,
+            "image_exif_rotation": 1,
+            "original_w": 2258,
+            "original_h": 1284,
+            "permalink": "https:\/\/sept-cs.slack.com\/files\/damon\/F12SR304X\/screen_shot_2016-04-22_at_6.46.36_pm.png",
+            "permalink_public": "https:\/\/slack-files.com\/T0S0TE9GE-F12SR304X-877a6c3b74",
+            "channels": [
+                "C0S10RUSZ"
+            ],
+            "groups": [
+    
+            ],
+            "ims": [
+    
+            ],
+            "comments_count": 0
+        },
+        "user": "U0RV0TVFV",
+        "upload": true,
+        "display_as_bot": false,
+        "username": "<@U0RV0TVFV|damon>",
+        "bot_id": null,
+        "ts": "1461314834.000050"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "site is live at: <http:\/\/sept-weather.ddns.net>",
+        "ts": "1461314942.000051"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "28mb\u2019s GOD DAMN, I\u2019ve seen 3mb apps do more than this HAHA",
+        "ts": "1461315021.000052"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "lol yeah its pretty huge.",
+        "ts": "1461315061.000053"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "mainly from the screen shots and images.",
+        "ts": "1461315082.000054",
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U0S10RU0M"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "the nav is messed up when u have a big window now?",
+        "ts": "1461315150.000055"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "oh nvm, only applies if ur using safari",
+        "ts": "1461315180.000056"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "not on the live server or my local",
+        "ts": "1461315184.000057"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "oh yeah damn.",
+        "ts": "1461315191.000058"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "hope they dont test it on anything other than  chrome.",
+        "ts": "1461315202.000059"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "lol we never did any browser testing",
+        "ts": "1461315209.000060"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "hahah",
+        "ts": "1461315277.000061"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "shiett",
+        "ts": "1461315278.000062"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "ohwell stuff it! They probably will rush the marking anywya",
+        "ts": "1461315290.000063"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "its not too bad in safari justed checked it",
+        "ts": "1461315316.000064"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "only ben uses safari so all good!",
+        "ts": "1461315346.000065"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "HAHA dag!",
+        "ts": "1461315762.000066"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "fag*",
+        "ts": "1461315763.000067"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "whoa homophobe",
+        "ts": "1461315797.000068",
+        "reactions": [
+            {
+                "name": "white_check_mark",
+                "users": [
+                    "U0S10RU0M"
+                ],
+                "count": 1
+            }
+        ]
+    }
+]

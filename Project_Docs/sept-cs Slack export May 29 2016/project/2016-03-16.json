@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "subtype": "file_share",
+        "text": "<@U0S10RU0M|benji> shared a file: <https:\/\/sept-cs.slack.com\/files\/benji\/F0T362U7Q\/RULES|RULES>",
+        "file": {
+            "id": "F0T362U7Q",
+            "created": 1458133526,
+            "timestamp": 1458134130,
+            "name": "RULES",
+            "title": "RULES",
+            "mimetype": "text\/plain",
+            "filetype": "space",
+            "pretty_type": "Post",
+            "user": "U0S10RU0M",
+            "editable": true,
+            "size": 299,
+            "mode": "space",
+            "is_external": false,
+            "external_type": "",
+            "is_public": true,
+            "public_url_shared": false,
+            "display_as_bot": false,
+            "username": "",
+            "url_private": "https:\/\/files.slack.com\/files-pri\/T0S0TE9GE-F0T362U7Q\/RULES?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "url_private_download": "https:\/\/files.slack.com\/files-pri\/T0S0TE9GE-F0T362U7Q\/download\/RULES?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "permalink": "https:\/\/sept-cs.slack.com\/files\/benji\/F0T362U7Q\/RULES",
+            "permalink_public": "https:\/\/slack-files.com\/T0S0TE9GE-F0T362U7Q-d8613bad06",
+            "preview": "<document><ul><li>Send messages in the correct channel. (#project, #general or Direct Message)<\/li><li>Use &#39;Snippets&#39; only to display a portion of work.<\/li><li>Use &#39;Posts&#39; to write lengthy messages to the group<\/li><\/ul><\/document>",
+            "updated": 1458134130,
+            "editor": "U0S10RU0M",
+            "last_editor": "U0S10RU0M",
+            "state": "locked",
+            "channels": [
+                "C0S10RUSZ",
+                "C0RV3AUDR"
+            ],
+            "groups": [
+    
+            ],
+            "ims": [
+    
+            ],
+            "comments_count": 0,
+            "pinned_to": [
+                "C0RV3AUDR",
+                "C0S10RUSZ"
+            ]
+        },
+        "user": "U0S10RU0M",
+        "upload": false,
+        "display_as_bot": false,
+        "username": "<@U0S10RU0M|benji>",
+        "bot_id": null,
+        "ts": "1458133802.000003"
+    }
+]

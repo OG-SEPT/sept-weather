@@ -1,0 +1,23 @@
+[
+    {
+        "user": "U0S10RU0M",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0S10RU0M|benji> has joined the channel",
+        "ts": "1457648220.814436"
+    },
+    {
+        "user": "U0RV0TVFV",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0RV0TVFV|damon> has joined the channel",
+        "ts": "1457648668.000002"
+    },
+    {
+        "user": "U0S17S3K3",
+        "type": "message",
+        "subtype": "channel_join",
+        "text": "<@U0S17S3K3|doeun> has joined the channel",
+        "ts": "1457648669.000003"
+    }
+]

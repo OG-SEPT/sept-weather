@@ -1,0 +1,58 @@
+[
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": ":nerd_face:",
+        "ts": "1461828404.000002"
+    },
+    {
+        "type": "message",
+        "subtype": "file_share",
+        "text": "<@U0RV0TVFV|damon> uploaded a file: <https:\/\/sept-cs.slack.com\/files\/damon\/F14NULZV3\/testqueue.java|TestQueue.java>",
+        "file": {
+            "id": "F14NULZV3",
+            "created": 1461887716,
+            "timestamp": 1461887716,
+            "name": "TestQueue.java",
+            "title": "TestQueue.java",
+            "mimetype": "text\/plain",
+            "filetype": "java",
+            "pretty_type": "Java",
+            "user": "U0RV0TVFV",
+            "editable": true,
+            "size": 940,
+            "mode": "snippet",
+            "is_external": false,
+            "external_type": "",
+            "is_public": true,
+            "public_url_shared": false,
+            "display_as_bot": false,
+            "username": "",
+            "url_private": "https:\/\/files.slack.com\/files-pri\/T0S0TE9GE-F14NULZV3\/testqueue.java?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "url_private_download": "https:\/\/files.slack.com\/files-pri\/T0S0TE9GE-F14NULZV3\/download\/testqueue.java?t=xoxe-26027485558-46537791795-46586720295-ca587d0fa5",
+            "permalink": "https:\/\/sept-cs.slack.com\/files\/damon\/F14NULZV3\/testqueue.java",
+            "permalink_public": "https:\/\/slack-files.com\/T0S0TE9GE-F14NULZV3-c125a48891",
+            "edit_link": "https:\/\/sept-cs.slack.com\/files\/damon\/F14NULZV3\/testqueue.java\/edit",
+            "preview": "import static org.junit.Assert.*;\n\nimport org.junit.Rule;\nimport org.junit.Test;\nimport org.junit.rules.ExpectedException;",
+            "preview_highlight": "<div class=\"CodeMirror cm-s-default CodeMirrorServer\">\n<div class=\"CodeMirror-code\">\n<div><pre><span class=\"cm-keyword\">import<\/span> <span class=\"cm-keyword\">static<\/span> <span class=\"cm-variable\">org<\/span>.<span class=\"cm-variable\">junit<\/span>.<span class=\"cm-variable\">Assert<\/span>.<span class=\"cm-operator\">*<\/span>;<\/pre><\/div>\n<div><pre>&#8203;<\/pre><\/div>\n<div><pre><span class=\"cm-keyword\">import<\/span> <span class=\"cm-variable\">org<\/span>.<span class=\"cm-variable\">junit<\/span>.<span class=\"cm-variable\">Rule<\/span>;<\/pre><\/div>\n<div><pre><span class=\"cm-keyword\">import<\/span> <span class=\"cm-variable\">org<\/span>.<span class=\"cm-variable\">junit<\/span>.<span class=\"cm-variable\">Test<\/span>;<\/pre><\/div>\n<div><pre><span class=\"cm-keyword\">import<\/span> <span class=\"cm-variable\">org<\/span>.<span class=\"cm-variable\">junit<\/span>.<span class=\"cm-variable\">rules<\/span>.<span class=\"cm-variable\">ExpectedException<\/span>;<\/pre><\/div>\n<\/div>\n<\/div>\n",
+            "lines": 51,
+            "lines_more": 46,
+            "channels": [
+                "C0S10RUSZ"
+            ],
+            "groups": [
+    
+            ],
+            "ims": [
+    
+            ],
+            "comments_count": 0
+        },
+        "user": "U0RV0TVFV",
+        "upload": true,
+        "display_as_bot": false,
+        "username": "<@U0RV0TVFV|damon>",
+        "bot_id": null,
+        "ts": "1461887716.000002"
+    }
+]

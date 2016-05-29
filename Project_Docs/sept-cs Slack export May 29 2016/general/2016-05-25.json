@@ -1,0 +1,260 @@
+[
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "<!everyone> I\u2019m gonna head to the vault to start on sept if any anyone wants to join me",
+        "ts": "1464224726.000002"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "<!everyone>: actually I\u2019m in the library, no space left in the vault",
+        "ts": "1464225916.000002"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "I'm up to work on it tonight after my test. On Skype.",
+        "ts": "1464229345.000003"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "okay im keen",
+        "ts": "1464229362.000004"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "ill probably stay at unit ho",
+        "ts": "1464229370.000005"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "tho*",
+        "ts": "1464229371.000006"
+    },
+    {
+        "type": "message",
+        "user": "U0SGR4XNZ",
+        "text": "Im gonna get ready n head out, gonna pick up the dashcam first",
+        "ts": "1464229619.000007"
+    },
+    {
+        "type": "message",
+        "user": "U0SGR4XNZ",
+        "text": "Bloody finally",
+        "ts": "1464229625.000008"
+    },
+    {
+        "type": "message",
+        "user": "U0SGR4XNZ",
+        "text": "U still staying after sept ben?",
+        "ts": "1464229651.000009"
+    },
+    {
+        "type": "message",
+        "user": "U0SGR4XNZ",
+        "text": "<#C0T3K5URG>",
+        "ts": "1464229661.000010"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "Yeah i am",
+        "ts": "1464229668.000011"
+    },
+    {
+        "type": "message",
+        "user": "U0SGR4XNZ",
+        "text": "Oops <@U0S10RU0M> ",
+        "ts": "1464229670.000012"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "gotta get this shit done",
+        "ts": "1464229672.000013"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "already running into walls lol",
+        "ts": "1464229684.000014"
+    },
+    {
+        "type": "message",
+        "user": "U0SGR4XNZ",
+        "text": "Shiet",
+        "ts": "1464229688.000015"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "yeah down to grab some china bar to get us through the night then?",
+        "ts": "1464229742.000016"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "Is it due Monday?",
+        "ts": "1464230059.000017"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "yeah due monday morning",
+        "ts": "1464230282.000018"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "we should call the API in javascript",
+        "ts": "1464230380.000019"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "for this assignment right?",
+        "ts": "1464230383.000020"
+    },
+    {
+        "type": "message",
+        "user": "U0SGR4XNZ",
+        "text": "Mebbe",
+        "ts": "1464230571.000021"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "JavaScript or Python.",
+        "ts": "1464230607.000022"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "hrm okay, i assume js will be easier",
+        "ts": "1464230969.000023"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "how do you reckon we\u2019ll get longitude\/latitude for this assignment?",
+        "ts": "1464231047.000024"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "damon you reckon i\u2019ll be wasting time",
+        "ts": "1464231290.000025"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "if i just made a text file",
+        "ts": "1464231295.000026"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "and manually populated it with long and lats for each waether station?",
+        "ts": "1464231307.000027"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "or does that seem to be a good idea?",
+        "ts": "1464231313.000028"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "Yeah there will be a better way in Python",
+        "ts": "1464231337.000029"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "hrm im stumped",
+        "ts": "1464231544.000030"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "need to find something similar to this for australia",
+        "ts": "1464231639.000031"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "<http:\/\/weather.rap.ucar.edu\/surface\/stations.txt>",
+        "ts": "1464231640.000032"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "i feel like a game of <http:\/\/slither.io|slither.io> lool",
+        "ts": "1464231975.000033"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "\"Damon Anthony Toumbourou \nAccessing Library db from home without mydesktop?\nCOLLAPSE\nI am wondering if anyone has been able to access the library database outside of RMIT without using mydesktop?\"",
+        "ts": "1464232361.000034"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "in the SEPT discussion board lool",
+        "ts": "1464232648.000035"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "Why is it funny?",
+        "ts": "1464232834.000036"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "haha because its not in the database concepts discussion",
+        "ts": "1464232874.000037"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "board",
+        "ts": "1464232881.000038"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "does anyone have the url for the BOM site again? cant find that page that shows the forecast",
+        "ts": "1464238108.000002"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "table",
+        "ts": "1464238113.000003"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "nevermind found it",
+        "ts": "1464238445.000004"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "the BOM website provides the long\/lat",
+        "ts": "1464238644.000005"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "come to mentor room",
+        "ts": "1464238668.000006"
+    }
+]

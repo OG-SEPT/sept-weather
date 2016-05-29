@@ -1,0 +1,21 @@
+[
+    {
+        "text": "",
+        "bot_id": "B0THPV16H",
+        "attachments": [
+            {
+                "fallback": "<https:\/\/github.com\/OG-SEPT\/sept-weather|[sept-weather]> New tag <https:\/\/github.com\/OG-SEPT\/sept-weather\/compare\/v1.0|v1.0> was pushed by DamonToumbourou",
+                "text": "<https:\/\/github.com\/OG-SEPT\/sept-weather|[sept-weather]> New tag <https:\/\/github.com\/OG-SEPT\/sept-weather\/compare\/v1.0|v1.0> was pushed by DamonToumbourou",
+                "id": 1,
+                "color": "4183C4",
+                "mrkdwn_in": [
+                    "text",
+                    "pretext"
+                ]
+            }
+        ],
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1461826766.782106"
+    }
+]

@@ -1,0 +1,188 @@
+[
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "pop-up chart: damon\nrefresh button: damon",
+        "ts": "1461224752.000002"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "@ben @alex hey do you guy know why the table doesnt line up?",
+        "ts": "1461292735.000002"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "<!everyone> its ok i fixed the table",
+        "ts": "1461293765.000003"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "<!everyone>: i have just sent you a link to the files for submit on google drive.",
+        "ts": "1461295684.000004"
+    },
+    {
+        "type": "message",
+        "user": "U0S17S3K3",
+        "text": " Oh. Thanks!!",
+        "ts": "1461295703.000005"
+    },
+    {
+        "type": "message",
+        "user": "U0S17S3K3",
+        "text": "I checked it",
+        "ts": "1461295707.000006"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "<!everyone>: have a look and let me know if you are happy with everything i have included and if you want to change it",
+        "ts": "1461295714.000007"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "i\u2019m scared to pull atm, until i get the chart working eek",
+        "ts": "1461296195.000008"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "i made a lot of changes.",
+        "ts": "1461296222.000009"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "the table was fucked. too many unused variables but all good",
+        "ts": "1461296242.000010"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "now",
+        "ts": "1461296249.000011"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "which variables were unused? :O",
+        "ts": "1461296284.000012"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "there was twice as many as needed and they were out of order.",
+        "ts": "1461296378.000013"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "i think someone copied it by accident",
+        "ts": "1461296390.000014"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "hrmm sounds strange..",
+        "ts": "1461296536.000015"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "i\u2019ll check github now",
+        "ts": "1461296538.000016"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "to see what you mean",
+        "ts": "1461296546.000017"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "dont worry about it its fixed",
+        "ts": "1461297306.000018"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "im submitting first versinon then",
+        "ts": "1461297319.000019"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "or ill w8 for chart?",
+        "ts": "1461297352.000020"
+    },
+    {
+        "type": "message",
+        "user": "U0S17S3K3",
+        "text": "  Do you need a hand?? Do i have to sth?",
+        "ts": "1461297373.000021"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "nah i think we are all good",
+        "ts": "1461297609.000022"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "nah submit the first version!",
+        "ts": "1461298028.000023"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "yeah did it",
+        "ts": "1461298175.000024"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "i might do some more tests",
+        "ts": "1461298192.000025"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "aja fighting!",
+        "ts": "1461298205.000026"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "<@U0S17S3K3>:",
+        "ts": "1461298211.000027"
+    },
+    {
+        "type": "message",
+        "user": "U0RV0TVFV",
+        "text": "u need help with chart?",
+        "ts": "1461298254.000028"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "Um if you want! U can try figure it out aswell if u want, but can\u2019t really share screens etc",
+        "ts": "1461298306.000029"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "GOT IT WORK DAMO!",
+        "ts": "1461305682.000030"
+    },
+    {
+        "type": "message",
+        "user": "U0S10RU0M",
+        "text": "ING",
+        "ts": "1461305685.000031"
+    }
+]
