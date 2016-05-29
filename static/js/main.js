@@ -1,5 +1,7 @@
 /* 
  * this function loads the station names
+ * after you select 'a-z'
+ *
 */   
 
 function loadFunction(name) {
@@ -27,8 +29,10 @@ function loadFunction(name) {
                 button.setAttribute('type', 'button');
                 button.setAttribute('value', value.station_name);
                 button.addEventListener('click', function(){
+                    
                           
                     getForecast(value.station_name); 
+                    // function call for displaying observation data 
                     getStationData(value.url);
                     
                 });

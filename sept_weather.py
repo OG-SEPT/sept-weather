@@ -351,13 +351,12 @@ def callForecastApi(coordinates):
 
         forecast_daily.append([summary, sunriseTime, sunsetTime, temperatureMin, temperatureMax, humidity, windSpeed, windBearing])
         
-    return forecast_daily
+    return json.dumps(forecast_daily)
 
-test1 = getCoordinates("Bundoora")
-print test1
+test1 = getCoordinates("Bentleigh")
 test2 = callForecastApi(test1)
-print len(test2)
-
+print "weather: "
+print test2
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
