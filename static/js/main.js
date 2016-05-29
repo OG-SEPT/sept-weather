@@ -38,7 +38,6 @@ function loadFunction(name) {
                 });
                 station_data.appendChild(button);
                 
-                
                 var fav_button = document.createElement('input');
                 fav_button.setAttribute("type", "button");
                 fav_button.setAttribute("value", "+");
@@ -56,6 +55,15 @@ function displayWeather(url, station_name) {
     console.log("station name: " + station_name);
     var displayName = document.getElementById('displayName');
     displayName.innerHTML = "station: " + station_name;
+    
+    var buttons = document.getElementById('buttons');
+    var button = document.createElement('input')
+    button.setAttribute('type', 'button');
+    button.setAttribute('value', 'Observation Data');
+    buttons.appendChild(button);
+    buttons.addEventListener('click', function(){
+        getStationData(url);
+    })
 }
 
 // forecast.io call
