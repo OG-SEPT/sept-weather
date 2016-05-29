@@ -318,16 +318,14 @@ def getCoordinates(location):
     geoLocation = geolocator.geocode(location + " Australia")
     
     coordinates = [geoLocation.latitude, geoLocation.longitude]
-    print "!!!!!!!"
-    print coordinates
     
-
     return coordinates
 
 
 def callForecastApi(coordinates):
     # call the api url
-    url = "https://api.forecast.io/forecast/" + private.FORECAST_KEY + "/"+str(coordinates[0]) + ","+str(coordinates[1])
+    forcastKey = "29ada930e694bf8f1b277802c4dc5b82"
+    url = "https://api.forecast.io/forecast/"+ private.FORECAST_KEY+"/"+str(coordinates[0])+","+str(coordinates[1])+"?units=si&exclude=hourly"
     response = urllib2.urlopen(url)
     
     # store the json data
@@ -336,7 +334,6 @@ def callForecastApi(coordinates):
     # stores list of lists of forecast data
     forecast_daily = []
     
-   
     for row in range(8):
         # assigning relevant values to variables
         summary = json_data['daily']['data'][row]['summary']
