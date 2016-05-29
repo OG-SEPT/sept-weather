@@ -371,8 +371,8 @@ function openChart(url) {
     }
 
 // import the chart google API stuff
-//google.charts.load('current', {'packages':['line']});
-//google.charts.setOnLoadCallback(drawChart);
+google.charts.load('current', {'packages':['line']});
+google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
     
