@@ -44,6 +44,7 @@ function loadFunction(name) {
 }
 
 
+
 // adds a station to favorite 
 // display graph here
 function addFavorite(url, name){
@@ -274,3 +275,40 @@ function drawChart() {
     var chart = new google.charts.Line(document.getElementById('linechart_material'));
     chart.draw(data, options);
 }
+
+function $zoom(){
+    var nowZoom = 100;
+    var size=document.getElementById("size");
+
+    $(" .zoomIn").click(function(){
+        zoom_in();
+    });
+    $(" .zoomOut").click(function(){
+        zoom_out();
+    });
+
+ function $zoom(){
+        document.body.style.zoom=nowZoom+"%";
+    }
+    function zoom_out(){
+        nowZoom-=10;
+        if(nowZoom<70){
+            alert("You cannot zoom out anymore.");
+            nowZoom=70;
+        }
+        $zoom();
+        size.innerHTML=nowZoom+"%";
+    }
+    function zoom_in(){
+        nowZoom+=10;
+        if(nowZoom>150){
+            alert("you cannot zoom in anymore.");
+            nowZoom=150;
+        }
+        $zoom();
+        size.innerHTML=nowZoom+"%";
+    }
+    
+}
+
+

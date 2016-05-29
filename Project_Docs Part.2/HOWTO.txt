@@ -1,0 +1,29 @@
+----------------------------------------------------------------
+                       SEPT-WEATHER
+                            -
+                   HOW TO INSTALL AND RUN 
+-----------------------------------------------------------------
+
+-------
+STEP 1:
+-------
+From terminal locate files and install the dependencies which
+can be found in the requirements.txt file.
+
+These can be installed using pip:
+    pip install -r /path/to/requirements.txt
+
+------
+STEP 2:
+-------
+Run the Python Flask development server with the following command:
+    python app.py
+
+The server should now be running and can be accessed through your 
+browser on your localhost on port 5001. 
+    127.0.0.1:5001 
+or  localhost:5001
+
+Your are now up and running! 
+Thanks for using SEPT-WEATHER
+_________________________________________________________________
