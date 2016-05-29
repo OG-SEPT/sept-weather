@@ -359,9 +359,9 @@ def callForecastApi(coordinates):
     print forecast_daily    
     return forecast_daily
 
-test1 = getCoordinates("Bundoora")
+#test1 = getCoordinates("Bundoora")
 #print test1
-test2 = callForecastApi(test1)
+#test2 = callForecastApi(test1)
 #print len(test2)
 
 
