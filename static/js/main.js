@@ -58,13 +58,27 @@ function displayWeather(url, station_name) {
     displayName.innerHTML = "station: " + station_name;
     
     // display observation table button
-    var ob = document.getElementById('ob');
-    ob.setAttribute('type', 'button');
-    ob.setAttribute('value', 'obser');
-    ob.addEventListener('click', function(){
+    var observation = document.getElementById('displayObservation');
+    var observationButton = document.createElement('input');
+    observationButton.setAttribute('type', 'button');
+    observationButton.setAttribute('value', 'obser');
+    observationButton.addEventListener('click', function(){
        getStationData(url);
     });
-     
+    console.log(observation.childNodes.length); 
+    
+    if(observation.children.length <= 1) {
+        console.log("node less than 1");
+        console.log(observation.childNodes.length)
+        observation.appendChild(observationButton);
+    }
+
+    if(observation.children.length > 1) {
+        console.log("here");
+        console.log(observation.childNodes.length);
+        observation.innerHTML = '';
+        observation.appendChild(observationButton);
+    }
 }
     
    
