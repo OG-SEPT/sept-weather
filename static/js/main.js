@@ -50,12 +50,12 @@ function loadFunction(name) {
     });
 }
 
+
 // displays the options for viewing weather
 function displayWeather(url, station_name) {
     // display selected station to page
-    console.log("station name: " + station_name);
     var displayName = document.getElementById('displayName');
-    displayName.innerHTML = "station: " + station_name;
+    displayName.innerHTML = " Station Name: " + station_name;
     
     // display observation table button
     var observation = document.getElementById('displayObservation');
@@ -76,58 +76,104 @@ function displayWeather(url, station_name) {
     }
     
     // display forecast IO API table button
-    var forecast = document.getElementById('displayForecast');
-    var forecastButton = document.createElement('input');
-    forecastButton.setAttribute('type', 'button');
-    forecastButton.setAttribute('value', 'Forecast: IO Forecast');
-    forecastButton.addEventListener('click', function(){
-       getStationData(url);
+    var forecastIO = document.getElementById('displayForecastIO');
+    var forecastIOButton = document.createElement('input');
+    forecastIOButton.setAttribute('type', 'button');
+    forecastIOButton.setAttribute('value', 'Forecast: IO Forecast');
+    forecastIOButton.addEventListener('click', function(){
+       getForecastIO(station_name);
     });
     
-    if(forecast.children.length <= 1) {
-        forecast.appendChild(forecastButton);
+    if(forecastIO.children.length <= 1) {
+        forecastIO.appendChild(forecastIOButton);
     }
 
-    if(forecast.children.length > 1) {
-        forecast.innerHTML = '';
-        forecast.appendChild(forecastButton);
+    if(forecastIO.children.length > 1) {
+        forecastIO.innerHTML = '';
+        forecastIO.appendChild(forecastIOButton);
     }
     
     // display forecast OpenWeather API table button
-    var forecast = document.getElementById('displayForecast');
-    var forecastButton = document.createElement('input');
-    forecastButton.setAttribute('type', 'button');
-    forecastButton.setAttribute('value', 'Forecast: OpenWeather');
-    forecastButton.addEventListener('click', function(){
-       getStationData(url);
+    var forecastOpen = document.getElementById('displayForecastOpen');
+    var forecastOpenButton = document.createElement('input');
+    forecastOpenButton.setAttribute('type', 'button');
+    forecastOpenButton.setAttribute('value', 'Forecast: OpenWeather');
+    forecastOpenButton.addEventListener('click', function(){
+       getForecastOpen(station_name);
     });
     
-    if(forecast.children.length <= 1) {
-        forecast.appendChild(forecastButton);
+    if(forecastOpen.children.length <= 1) {
+        forecastOpen.appendChild(forecastOpenButton);
     }
 
-    if(forecast.children.length > 1) {
-        forecast.innerHTML = '';
-        forecast.appendChild(forecastButton);
+    if(forecastOpen.children.length > 1) {
+        forecastOpen.innerHTML = '';
+        forecastOpen.appendChild(forecastOpenButton);
     }
-
 
 }
     
     
 // forecast.io call
-function getForecast(location){
+function getForecastIO(name){
     $.ajax({
         type: 'GET',
         async: true,
-        url: 'stations_info',
-        data: url,
+        url: 'forecast_io',
+        data: name,
         dataType: 'json',
         success: function(result){
-            call function python
+
+            document.getElementById('stations_table').style.display = 'none';
+            document.getElementById('forecast_table').style.display = 'block';
+            
+            var items = document.getElementById('forecast_data'); 
+            items.innerHTML = "";
+
+            $.each(result, function(index, value){
+                // desc weather
+                var desc = document.createElement('td');
+                desc.textContent = value[0];
+                items.appendChild(desc);
+
+                // temp Min
+                var tempMin = document.createElement('td');
+                console.log("tempMin:" + value[1]);
+                tempMin.textContent = value[1];
+                items.appendChild(tempMin);
+
+                /// temp Max
+                var tempMax = document.createElement('td');
+                tempMax.textContent = value[2];
+                items.appendChild(tempMax);
+
+                // humidity
+                var humidity = document.createElement('td');
+                humidity.textContent = value[3];
+                items.appendChild(humidity);
+                
+                var tableRow = document.createElement('tr');
+                items.appendChild(tableRow);
+            });
         }
     });
 } 
+
+
+/// forecast.io call
+function getForecastOpen(name){
+    $.ajax({
+        type: 'GET',
+        async: true,
+        url: 'forecast_io',
+        data: name,
+        dataType: 'json',
+        success: function(result){
+            console.log(result);
+        }
+    });
+} 
+
 
 // adds a station to favorite 
 // display graph here
@@ -143,11 +189,13 @@ function addFavorite(url, name){
     });
 }
 
+
 // Chart Arrays
 var min = [];
 var max = [];
 var am = [];
 var pm = [];
+
 
 // loads the station weather data
 function getStationData(url){
@@ -159,12 +207,13 @@ function getStationData(url){
         data: url,
         dataType: 'json',
         success: function(result){
+
+            document.getElementById('forecast_table').style.display = 'none';
+            document.getElementById('stations_table').style.display = 'block';
             
-            document.getElementById('stations_table').style.display = "block"
-             
             // handles the wetaher station data
             var items = document.getElementById('station_data');
-            items.innerHTML = "";
+            items.innerHTML = '';
             
             $.each(result, function(index, value){
                 //Date
@@ -317,8 +366,8 @@ function openChart(url) {
     }
 
 // import the chart google API stuff
-google.charts.load('current', {'packages':['line']});
-google.charts.setOnLoadCallback(drawChart);
+//google.charts.load('current', {'packages':['line']});
+//google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
     
