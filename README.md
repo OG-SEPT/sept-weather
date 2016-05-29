@@ -1,6 +1,6 @@
 
 -------------------------------------------------------------------------
-          	             SEPT WEATHER
+          	             SEPT WEATHER V2.0
 -------------------------------------------------------------------------
 
 A weather service web application built using the python Flask framework.
@@ -67,6 +67,8 @@ requests=2.9.1
 bs4=4.4.1
 re=2.2.1
 json=2.0.9
+geopy=1.11.0
+
 
 --------------------------------------------------------------------------
 INSTALATION:
@@ -80,12 +82,12 @@ TESTING:
 
 Unit Testing:
 -------------
-Our Application includes a Test file: sept-test.py 
+Our Application includes a Test file: sept_test.py 
 This file runs a number of unit tests that call our api urls and functions
 and check the return data is as expected.
 
 To run the tests file:
-    python sept-test.py
+    python sept_test.py
     
 
 System Level Test Cases:

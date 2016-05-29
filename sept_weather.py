@@ -188,7 +188,7 @@ def get_forecast_io():
 # forecast: OpenWeather call
 @app.route('/forecast_open', methods=['GET'])
 def get_forecast_open():
-    name = requests.args.get('name')
+    name = request.query_string
 
     weather = callOpenWeather(name)
 
@@ -360,7 +360,7 @@ def callForecastApi(coordinates):
 
 
 # OpenWeatherMap API call handled here
-def callOpenWeatherMap(name):
+def callOpenWeather(name):
     ISO_CODE_AUS = ',3166-1' 
     url = 'http://api.openweathermap.org/data/2.5/forecast/daily?q=' + name + ISO_CODE_AUS + '&APPID=' + private.OPEN_KEY + '&units=metric'
     
@@ -369,12 +369,16 @@ def callOpenWeatherMap(name):
     forecast_daily = []
 
     for items in json_data['list']:
+        date = items['dt']
+        date = datetime.datetime.fromtimestamp(int(date)).strftime('%d %b')
+        print "date"
+        print date
         summary = items['weather'][0]['description']
         temperatureMin = items['temp']['min']
         temperatureMax = items['temp']['max']
         humidity = items['humidity']
         
-        forecast_daily.append([summary, temperatureMin, temperatureMax, humidity])
+        forecast_daily.append([date, summary, temperatureMin, temperatureMax, humidity])
 
     return forecast_daily
 

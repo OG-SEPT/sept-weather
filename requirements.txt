@@ -3,3 +3,4 @@ requests=2.9.1
 bs4=4.4.1
 re=2.2.1
 json=2.0.9
+geopy=1.11.0
