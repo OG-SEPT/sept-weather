@@ -340,32 +340,31 @@ def callForecastApi(coordinates):
         temperatureMin = json_data['daily']['data'][row]['temperatureMin']      
         temperatureMax = json_data['daily']['data'][row]['temperatureMax']    
         humidity = json_data['daily']['data'][row]['humidity']
-        windSpeed = json_data['daily']['data'][row]['windSpeed']
+        #windSpeed = json_data['daily']['data'][row]['windSpeed']
 
-        forecast_daily.append([summary, temperatureMin, temperatureMax, humidity, windSpeed])
+        forecast_daily.append([summary, temperatureMin, temperatureMax, humidity])
     
     return forecast_daily
 
 # OpenWeatherMap API call handled here
 def callOpenWeatherMap(name):
     ISO_CODE_AUS = ',3166-1' 
-    url = 'http://api.openweathermap.org/data/2.5/forecast?q=' + name + ISO_CODE_AUS + '&APPID=' + private.OPEN_KEY + '&units=metric'
+    url = 'http://api.openweathermap.org/data/2.5/forecast/daily?q=' + name + ISO_CODE_AUS + '&APPID=' + private.OPEN_KEY + '&units=metric'
     
     results = urllib2.urlopen(url)
     json_data = json.loads(results.read())
-    print "RESULTS: "
     forecast_daily = []
 
     for items in json_data['list']:
-        print "date / time"
-        print items['dt_txt']
-        print items['dt']
-        print "temp min"
-        print items['main']['temp_min']
+        summary = items['weather'][0]['description']
+        temperatureMin = items['temp']['min']
+        temperatureMax = items['temp']['max']
+        humidity = items['humidity']
+        
+        forecast_daily.append([summary, temperatureMin, temperatureMax, humidity])
 
-    return results
+    return forecast_daily
 
-callOpenWeatherMap("sydney")
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
