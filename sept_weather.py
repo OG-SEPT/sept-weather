@@ -337,56 +337,31 @@ def callForecastApi(coordinates):
     forecast_daily = []
     
    
-    for row in range(7):
+    for row in range(8):
         # assigning relevant values to variables
-        time = json_data['daily']['data'][row]['time']
         summary = json_data['daily']['data'][row]['summary']
-        icon = json_data['daily']['data'][row]['icon']
         sunriseTime = json_data['daily']['data'][row]['sunriseTime']
         sunsetTime = json_data['daily']['data'][row]['sunsetTime']
-        moonPhase = json_data['daily']['data'][row]['moonPhase']
-        
-        precipIntensity = json_data['daily']['data'][row]['precipIntensity']
-        precipIntensityMax = json_data['daily']['data'][row]['precipIntensityMax']
-        precipIntensityMaxTime = json_data['daily']['data'][row]['precipIntensityMaxTime']
-        precipProbability = json_data['daily']['data'][row]['precipProbability']
-        #precipType = json_data['daily']['data'][row]['precipType']
         
         temperatureMin = json_data['daily']['data'][row]['temperatureMin']
         temperatureMinTime = json_data['daily']['data'][row]['temperatureMinTime']
         temperatureMax = json_data['daily']['data'][row]['temperatureMax']
         temperatureMaxTime = json_data['daily']['data'][row]['temperatureMaxTime']
         
-        apparentTemperatureMin = json_data['daily']['data'][row]['apparentTemperatureMin']
-        apparentTemperatureMinTime = json_data['daily']['data'][row]['apparentTemperatureMinTime']
-        apparentTemperatureMax = json_data['daily']['data'][row]['apparentTemperatureMax']
-        apparentTemperatureMaxTime = json_data['daily']['data'][row]['apparentTemperatureMaxTime']
-        
-        dewPoint = json_data['daily']['data'][row]['dewPoint']
         humidity = json_data['daily']['data'][row]['humidity']
         windSpeed = json_data['daily']['data'][row]['windSpeed']
         windBearing = json_data['daily']['data'][row]['windBearing']
-        cloudCover = json_data['daily']['data'][row]['cloudCover']
-        pressure = json_data['daily']['data'][row]['pressure']
-        ozone = json_data['daily']['data'][row]['ozone']
+
+        forecast_daily.append([summary, sunriseTime, sunsetTime, temperatureMin, temperatureMax, humidity, windSpeed, windBearing])
         
-        forecast_daily.append([time, summary, icon, sunriseTime, sunsetTime, moonPhase, precipIntensity, precipIntensityMax, precipIntensityMaxTime, precipProbability, precipType, temperatureMin, temperatureMax, apparentTemperatureMin, apparentTemperatureMinTime, apparentTemperatureMax, apparentTemperatureMaxTime, dewPoint, humidity, windSpeed, windBearing, cloudCover, pressure, ozone])
-
-    print type(forecast_daily)
-    print forecast_daily[0]
-    print "hello"
-
     return forecast_daily
 
-
-#test1 = getCoordinates("Bundoora")
-#print test1
-#test2 = callForecastApi(test1)
-#print test2
+test1 = getCoordinates("Bundoora")
+print test1
+test2 = callForecastApi(test1)
+print len(test2)
 
 #ownKey = "5c34314ddb1be6e455c7de090a947858";  
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
-    
-
