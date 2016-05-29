@@ -174,16 +174,24 @@ def reset_database():
     return "Successful Reset"
 
 
-# forecast
-@app.route('/forecast', methods=['GET'])
+# forecast: Forecast IO call
+@app.route('/forecast_io', methods=['GET'])
 def get_forecast():
     name = request.args.get('name')
     
     location = getCoordinates(name)
     weather_data = callForecastApi(location)
 
-    return weather_data
-    
+    return json.dumps(weather_data)
+
+
+# forecast: OpenWeather call
+@app.route('forecast_open', methods=['GET'])
+    name = requests.args.get('name')
+
+    weather = callOpenWeather(name)
+
+    return json.dumps(weather)
 
 ##########################################################
 # Utility functions for scraping data below

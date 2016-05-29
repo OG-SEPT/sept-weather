@@ -81,42 +81,15 @@ function displayWeather(url, station_name) {
     }
 }
     
-   
-    
-
-    
-    // display observation chart button
-    
-    // display forecast table button
-    
-    // display forecast chart button
-    
-    //    var buttons = document.getElementById('buttons');
-    //        var button = document.createElement('input');
-    //        
-    //        button.setAttribute('type', 'button');
-    //        button.setAttribute('value', 'Observation Data');
-    //    //    buttons.removeChild(button);
-    //        buttons.appendChild(button);
-    //        buttons.addEventListener('click', function(){
-    //            getStationData(url);
-    //        })
-
-        
-
 
 // forecast.io call
 function getForecast(location){
-    var button = document.createElement('input');
-    button.setAttribute('type', 'button');
-    button.setAttribute('value', location);
-    button.addEventListener('click', function(){
-        // this is where u calll the geopy module
-//        $.ajax()
+    type: 'GET',
+    async: true,
+    url: '
+    $.ajax()
         
     });
-
-    
     
 } 
 
