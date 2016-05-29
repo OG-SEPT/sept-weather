@@ -346,13 +346,15 @@ def callForecastApi(coordinates):
     
     for row in range(8):
         # assigning relevant values to variables
+        date = json_data['daily']['data'][row]['sunriseTime']
+        date = datetime.datetime.fromtimestamp(int(date)).strftime('%d %b')
         summary = json_data['daily']['data'][row]['summary']  
         temperatureMin = json_data['daily']['data'][row]['temperatureMin']      
         temperatureMax = json_data['daily']['data'][row]['temperatureMax']    
         humidity = json_data['daily']['data'][row]['humidity']
         #windSpeed = json_data['daily']['data'][row]['windSpeed']
 
-        forecast_daily.append([summary, temperatureMin, temperatureMax, humidity])
+        forecast_daily.append([date, summary, temperatureMin, temperatureMax, humidity])
     
     return forecast_daily
 
