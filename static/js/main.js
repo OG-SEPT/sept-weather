@@ -52,14 +52,19 @@ function loadFunction(name) {
     });
 }
 
+// displays the options for viewing weather
+function displayWeather(url, station_name) {
+    console.log("station name: " + station_name);
+    var displayName = document.getElementById('displayName');
+    displayName.innerHTML = "station: " + station_name;
+}
+
 // forecast.io call
 function getForecast(location){
-    console.log("hello");
     var button = document.createElement('input');
     button.setAttribute('type', 'button');
     button.setAttribute('value', location);
     button.addEventListener('click', function(){
-    console.log("hello");      
         // this is where u calll the geopy module
 //        $.ajax()
         
