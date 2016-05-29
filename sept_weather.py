@@ -318,17 +318,12 @@ def getCoordinates(location):
     
     coordinates = [geoLocation.latitude, geoLocation.longitude]
     print "!!!!!!!"
-    print corordinates
+    print coordinates
     
 
     return coordinates
-<<<<<<< HEAD
-   
 
-=======
-    
-    
->>>>>>> b8d23d4ebd2199e4e6d83ccbdebf58879509a504
+
 def callForecastApi(coordinates):
     # call the api url
     forcastKey = "29ada930e694bf8f1b277802c4dc5b82"
@@ -355,7 +350,7 @@ def callForecastApi(coordinates):
         precipIntensityMax = json_data['daily']['data'][row]['precipIntensityMax']
         precipIntensityMaxTime = json_data['daily']['data'][row]['precipIntensityMaxTime']
         precipProbability = json_data['daily']['data'][row]['precipProbability']
-        precipType = json_data['daily']['data'][row]['precipType']
+        #precipType = json_data['daily']['data'][row]['precipType']
         
         temperatureMin = json_data['daily']['data'][row]['temperatureMin']
         temperatureMinTime = json_data['daily']['data'][row]['temperatureMinTime']
