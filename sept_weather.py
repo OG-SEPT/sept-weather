@@ -138,7 +138,6 @@ def chart():
 @app.route('/stations', methods=['GET'])
 def get_stations():
     url = request.query_string
-    print getCoordinates("bentleigh"); 
     links = get_station_links(url)
     
     return json.dumps(links)
@@ -177,8 +176,9 @@ def reset_database():
 # forecast: Forecast IO call
 @app.route('/forecast_io', methods=['GET'])
 def get_forecast_io():
-    name = request.args.get('name')
-    
+    name = request.query_string
+    print 'name'
+    print name
     location = getCoordinates(name)
     weather_data = callForecastApi(location)
 
@@ -332,6 +332,7 @@ def getCoordinates(location):
     
     return coordinates
 
+
 # Forecast.IO API call handled here
 def callForecastApi(coordinates):
     url = "https://api.forecast.io/forecast/"+ private.FORECAST_KEY+"/"+str(coordinates[0])+","+str(coordinates[1])+"?units=si&exclude=hourly"
@@ -354,6 +355,7 @@ def callForecastApi(coordinates):
         forecast_daily.append([summary, temperatureMin, temperatureMax, humidity])
     
     return forecast_daily
+
 
 # OpenWeatherMap API call handled here
 def callOpenWeatherMap(name):
