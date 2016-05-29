@@ -1,10 +1,10 @@
-<!--ACT PAGE-->
 {% extends "layout.html" %}
 {% block title %}ACT{% endblock %}
 
 {% block main_content %}
 
-<h2 class="sub-header">Weather Observations for Australian Capital Territory</h2>
+<h2 class="sub-header">Weather Observations for ACT</h2>
+<h5>Select letters below to expand for station names:</h5>
 
 <div>
     {% for station in stations_links %}
@@ -14,6 +14,9 @@
 
 <hr>
 
+<h5 id="inst"></h5>
+<h5 id="inst_1"></h5>
+
 <div id="station">
 </div> 
 <div id="add_favorite">
@@ -21,6 +24,21 @@
 
 <hr>
 
+<h3>
+<div id="displayName">
+</div>
+</h3>
+
+<div id="displayObservation">
+</div>
+
+<div id="displayForecastIO">
+</div>
+
+<div id="displayForecastOpen">
+</div>
+
+<!--include the table and chart button from table.html -->
 {% include "table.html" %}
 
 {% endblock %}

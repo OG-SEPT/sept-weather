@@ -1,9 +1,9 @@
 {% extends "layout.html" %}
-{% block title %}TAS{% endblock %}
+{% block title %}VIC{% endblock %}
 
 {% block main_content %}
 
-<h2 class="sub-header">Weather Observations for Tasmania</h2>
+<h2 class="sub-header">Weather Observations for Victoria</h2>
 <h5>Select letters below to expand for station names:</h5>
 
 <div>

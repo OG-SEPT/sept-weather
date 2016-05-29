@@ -226,6 +226,8 @@ function addFavorite(url, name){
         data: {'url': url, 'name': name},
         dataType: 'json',
         success: function(result){
+            console.log('success');
+            window.alert('Favorite added!');
         }
     });
 }
