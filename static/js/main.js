@@ -52,26 +52,20 @@ function loadFunction(name) {
 
 // displays the options for viewing weather
 function displayWeather(url, station_name) {
-    if(document.getElementById('Otable') != undefined){
-        console.log("test");
-        document.getElementById('Otable').removeChild();
-    }
-        
-    
     // display selected station to page
     console.log("station name: " + station_name);
     var displayName = document.getElementById('displayName');
     displayName.innerHTML = "station: " + station_name;
     
     // display observation table button
-    var otable = document.getElementById('OTable');
-    var otable_button = document.createElement('input');
-    otable_button.setAttribute('type', 'button');
-    otable_button.setAttribute('value', 'Observation Data');
-    otable.appendChild(otable_button);
-    otable.addEventListener('click', function(){
-        getStationData(url);
-    })
+    var ob = document.getElementById('ob');
+    ob.setAttribute('type', 'button');
+    ob.setAttribute('value', 'obser');
+    ob.addEventListener('click', function(){
+       getStationData(url);
+    });
+     
+}
     
    
     
@@ -95,7 +89,7 @@ function displayWeather(url, station_name) {
     //        })
 
         
-}
+
 
 // forecast.io call
 function getForecast(location){
