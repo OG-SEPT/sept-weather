@@ -8,6 +8,7 @@ import sqlite3
 from time import sleep
 from geopy.geocoders import Nominatim
 import urllib2
+import private
 
 app = Flask(__name__)
 
@@ -326,8 +327,7 @@ def getCoordinates(location):
 
 def callForecastApi(coordinates):
     # call the api url
-    forcastKey = "29ada930e694bf8f1b277802c4dc5b82"
-    url = "https://api.forecast.io/forecast/"+forcastKey+"/"+str(coordinates[0])+","+str(coordinates[1])
+    url = "https://api.forecast.io/forecast/" + private.FORECAST_KEY + "/"+str(coordinates[0]) + ","+str(coordinates[1])
     response = urllib2.urlopen(url)
     
     # store the json data
@@ -361,7 +361,6 @@ print test1
 test2 = callForecastApi(test1)
 print len(test2)
 
-#ownKey = "5c34314ddb1be6e455c7de090a947858";  
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
