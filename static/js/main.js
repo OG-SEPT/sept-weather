@@ -58,51 +58,44 @@ function displayWeather(url, station_name) {
     displayName.innerHTML = "station: " + station_name;
     
     // display observation table button
-
     var observation = document.getElementById('displayObservation');
     var observationButton = document.createElement('input');
     observationButton.setAttribute('type', 'button');
-    observationButton.setAttribute('value', 'obser');
+    observationButton.setAttribute('value', 'Observation Data');
     observationButton.addEventListener('click', function(){
        getStationData(url);
     });
-    console.log(observation.childNodes.length); 
     
     if(observation.children.length <= 1) {
-        console.log("node less than 1");
-        console.log(observation.childNodes.length)
         observation.appendChild(observationButton);
     }
 
     if(observation.children.length > 1) {
-        console.log("here");
-        console.log(observation.childNodes.length);
         observation.innerHTML = '';
         observation.appendChild(observationButton);
     }
+    
+    // display forecast table button
+    var forecast = document.getElementById('displayForecast');
+    var forecastButton = document.createElement('input');
+    forecastButton.setAttribute('type', 'button');
+    forecastButton.setAttribute('value', 'Forecast Data');
+    forecastButton.addEventListener('click', function(){
+       getStationData(url);
+    });
+    
+    if(forecast.children.length <= 1) {
+        forecast.appendChild(forecastButton);
+    }
+
+    if(forecast.children.length > 1) {
+        forecast.innerHTML = '';
+        forecast.appendChild(forecastButton);
+    }
+    
 }
     
     
-    // display observation chart button
-    
-    // display forecast table button
-    
-    // display forecast chart button
-    
-    //    var buttons = document.getElementById('buttons');
-    //        var button = document.createElement('input');
-    //        
-    //        button.setAttribute('type', 'button');
-    //        button.setAttribute('value', 'Observation Data');
-    //    //    buttons.removeChild(button);
-    //        buttons.appendChild(button);
-    //        buttons.addEventListener('click', function(){
-    //            getStationData(url);
-    //        })
-
-        
-
-
 // forecast.io call
 function getForecast(location){
     var button = document.createElement('input');
