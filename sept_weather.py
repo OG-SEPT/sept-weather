@@ -9,6 +9,7 @@ from time import sleep
 from geopy.geocoders import Nominatim
 import urllib2
 import private
+import datetime
 
 app = Flask(__name__)
 
@@ -323,8 +324,6 @@ def getCoordinates(location):
 
 
 def callForecastApi(coordinates):
-    # call the api url
-    forcastKey = "29ada930e694bf8f1b277802c4dc5b82"
     url = "https://api.forecast.io/forecast/"+ private.FORECAST_KEY+"/"+str(coordinates[0])+","+str(coordinates[1])+"?units=si&exclude=hourly"
     response = urllib2.urlopen(url)
     
@@ -338,25 +337,33 @@ def callForecastApi(coordinates):
         # assigning relevant values to variables
         summary = json_data['daily']['data'][row]['summary']
         sunriseTime = json_data['daily']['data'][row]['sunriseTime']
+        sunriseTime = datetime.datetime.fromtimestamp(int(sunriseTime)).strftime('%I:%M%p')
+        
         sunsetTime = json_data['daily']['data'][row]['sunsetTime']
+        sunsetTime = datetime.datetime.fromtimestamp(int(sunsetTime)).strftime('%I:%M%p')
         
         temperatureMin = json_data['daily']['data'][row]['temperatureMin']
         temperatureMinTime = json_data['daily']['data'][row]['temperatureMinTime']
+        temperatureMinTime = datetime.datetime.fromtimestamp(int(temperatureMinTime)).strftime('%I:%M%p')
+        
         temperatureMax = json_data['daily']['data'][row]['temperatureMax']
         temperatureMaxTime = json_data['daily']['data'][row]['temperatureMaxTime']
+        temperatureMaxTime = datetime.datetime.fromtimestamp(int(temperatureMaxTime)).strftime('%I:%M%p')
         
         humidity = json_data['daily']['data'][row]['humidity']
         windSpeed = json_data['daily']['data'][row]['windSpeed']
         windBearing = json_data['daily']['data'][row]['windBearing']
 
-        forecast_daily.append([summary, sunriseTime, sunsetTime, temperatureMin, temperatureMax, humidity, windSpeed, windBearing])
-        
-    return json.dumps(forecast_daily)
+        forecast_daily.append([summary, sunriseTime, sunsetTime, temperatureMin, temperatureMinTime, temperatureMax, temperatureMaxTime, humidity, windSpeed, windBearing])
+    
+    print forecast_daily    
+    return forecast_daily
 
-test1 = getCoordinates("Bentleigh")
-test2 = callForecastApi(test1)
-print "weather: "
-print test2
+#test1 = getCoordinates("Bundoora")
+#print test1
+#test2 = callForecastApi(test1)
+#print len(test2)
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
