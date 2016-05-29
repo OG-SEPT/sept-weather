@@ -23,7 +23,6 @@ function loadFunction(name) {
             var inst_1 = document.getElementById('inst_1');
             inst_1.innerHTML = 'Add to your favorites with: +';
 
-
             $.each(result, function(index, value){
                 var button = document.createElement('input');
                 button.setAttribute('type', 'button');

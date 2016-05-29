@@ -179,9 +179,9 @@ def get_forecast():
     name = request.args.get('name')
     
     location = getCoordinates(name)
-    print "name: "+ name
-    print "locataion: "+location
-    return location
+    weather_data = callForecastApi(location)
+
+    return weather_data
     
 
 ##########################################################
