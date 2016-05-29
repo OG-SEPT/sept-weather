@@ -52,18 +52,49 @@ function loadFunction(name) {
 
 // displays the options for viewing weather
 function displayWeather(url, station_name) {
+    if(document.getElementById('Otable') != undefined){
+        console.log("test");
+        document.getElementById('Otable').removeChild();
+    }
+        
+    
+    // display selected station to page
     console.log("station name: " + station_name);
     var displayName = document.getElementById('displayName');
     displayName.innerHTML = "station: " + station_name;
     
-    var buttons = document.getElementById('buttons');
-    var button = document.createElement('input')
-    button.setAttribute('type', 'button');
-    button.setAttribute('value', 'Observation Data');
-    buttons.appendChild(button);
-    buttons.addEventListener('click', function(){
+    // display observation table button
+    var otable = document.getElementById('OTable');
+    var otable_button = document.createElement('input');
+    otable_button.setAttribute('type', 'button');
+    otable_button.setAttribute('value', 'Observation Data');
+    otable.appendChild(otable_button);
+    otable.addEventListener('click', function(){
         getStationData(url);
     })
+    
+   
+    
+
+    
+    // display observation chart button
+    
+    // display forecast table button
+    
+    // display forecast chart button
+    
+    //    var buttons = document.getElementById('buttons');
+    //        var button = document.createElement('input');
+    //        
+    //        button.setAttribute('type', 'button');
+    //        button.setAttribute('value', 'Observation Data');
+    //    //    buttons.removeChild(button);
+    //        buttons.appendChild(button);
+    //        buttons.addEventListener('click', function(){
+    //            getStationData(url);
+    //        })
+
+        
 }
 
 // forecast.io call
