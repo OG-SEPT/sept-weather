@@ -374,6 +374,7 @@ def callOpenWeather(name):
         print "date"
         print date
         summary = items['weather'][0]['description']
+        summary = summary.title()
         temperatureMin = items['temp']['min']
         temperatureMax = items['temp']['max']
         humidity = items['humidity']
