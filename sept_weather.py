@@ -176,7 +176,7 @@ def reset_database():
 
 # forecast: Forecast IO call
 @app.route('/forecast_io', methods=['GET'])
-def get_forecast():
+def get_forecast_io():
     name = request.args.get('name')
     
     location = getCoordinates(name)
@@ -186,7 +186,8 @@ def get_forecast():
 
 
 # forecast: OpenWeather call
-@app.route('forecast_open', methods=['GET'])
+@app.route('/forecast_open', methods=['GET'])
+def get_forecast_open():
     name = requests.args.get('name')
 
     weather = callOpenWeather(name)

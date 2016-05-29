@@ -75,11 +75,11 @@ function displayWeather(url, station_name) {
         observation.appendChild(observationButton);
     }
     
-    // display forecast table button
+    // display forecast IO API table button
     var forecast = document.getElementById('displayForecast');
     var forecastButton = document.createElement('input');
     forecastButton.setAttribute('type', 'button');
-    forecastButton.setAttribute('value', 'Forecast Data');
+    forecastButton.setAttribute('value', 'Forecast: IO Forecast');
     forecastButton.addEventListener('click', function(){
        getStationData(url);
     });
@@ -93,17 +93,30 @@ function displayWeather(url, station_name) {
         forecast.appendChild(forecastButton);
     }
     
+    // display forecast OpenWeather API table button
+    var forecast = document.getElementById('displayForecast');
+    var forecastButton = document.createElement('input');
+    forecastButton.setAttribute('type', 'button');
+    forecastButton.setAttribute('value', 'Forecast: OpenWeather');
+    forecastButton.addEventListener('click', function(){
+       getStationData(url);
+    });
+    
+    if(forecast.children.length <= 1) {
+        forecast.appendChild(forecastButton);
+    }
+
+    if(forecast.children.length > 1) {
+        forecast.innerHTML = '';
+        forecast.appendChild(forecastButton);
+    }
+
+
 }
     
     
 // forecast.io call
 function getForecast(location){
-    type: 'GET',
-    async: true,
-    url: '
-    $.ajax()
-        
-    });
     
 } 
 
