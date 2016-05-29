@@ -18,6 +18,12 @@ class FlaskrTestCase(unittest.TestCase):
         print result.data
 
         assert 'Successful' in result.data
+    
+    def test_forecastapi(self):
+        self.app = sept_weather.app.test_client()
+        result = self.app.get('/forecaset_io')
+
+        assert 'ses' in result.data
 
 if __name__ == '__main__':
     unittest.main()
